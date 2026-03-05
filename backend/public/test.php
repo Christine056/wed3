@@ -1,0 +1,1 @@
+<?phpecho "PHP is working";$conn = mysqli_connect("localhost", "root", "", "wedding_db", 3306);if ($conn) {    echo " - Connected successfully!";} else {    echo " - Error: " . mysqli_connect_error();}

@@ -1,0 +1,24 @@
+<?php
+error_reporting(E_ALL);
+ini_set("display_errors", "1");
+if (strpos(PHP_SAPI, "cgi") === 0) { exit("cli tool not supported.\n"); }
+define("SPARKED", true);
+define("FCPATH", __DIR__ . DIRECTORY_SEPARATOR . "public" . DIRECTORY_SEPARATOR);
+chdir(__DIR__);
+require __DIR__ . "/app/Config/Paths.php";
+$paths = new Config\Paths();
+try {
+    require __DIR__ . "/vendor/codeigniter4/framework/system/bootstrap.php";
+} catch (\Throwable $e) {
+    echo "BOOTSTRAP ERROR: " . $e->getMessage() . "\n";
+    echo "File: " . $e->getFile() . " Line: " . $e->getLine() . "\n";
+    exit(1);
+}
+require_once __DIR__ . "/vendor/codeigniter4/framework/system/Config/DotEnv.php";
+(new CodeIgniter\Config\DotEnv(ROOTPATH))->load();
+defined("ENVIRONMENT") || define("ENVIRONMENT", env("CI_ENVIRONMENT", "development"));
+$app = Config\Services::codeigniter();
+$app->initialize();
+$console = new CodeIgniter\CLI\Console();
+$console->showHeader();
+exit($console->run());

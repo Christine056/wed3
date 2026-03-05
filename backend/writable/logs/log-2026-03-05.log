@@ -1,0 +1,1329 @@
+CRITICAL - 2026-03-05 08:49:12 --> ErrorException: require_once(D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\ThirdParty/Kint/init.php): Failed to open stream: No such file or directory
+in SYSTEMPATH\CodeIgniter.php on line 293.
+ 1 SYSTEMPATH\CodeIgniter.php(293): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\ThirdParty/Kint/init.php): Failed to open stream: No such file or directory', 'D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\CodeIgniter.php', 293)
+ 2 SYSTEMPATH\CodeIgniter.php(293): require_once()
+ 3 SYSTEMPATH\CodeIgniter.php(264): CodeIgniter\CodeIgniter->autoloadKint()
+ 4 SYSTEMPATH\CodeIgniter.php(223): CodeIgniter\CodeIgniter->initializeKint()
+ 5 ROOTPATH\spark(21): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2026-03-05 08:49:13 --> ErrorException: Uncaught TypeError: CodeIgniter\HTTP\ContentSecurityPolicy::__construct(): Argument #1 ($config) must be of type Config\ContentSecurityPolicy, null given, called in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php on line 190 and defined in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\HTTP\ContentSecurityPolicy.php:244
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php(190): CodeIgniter\HTTP\ContentSecurityPolicy->__construct(NULL)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::csp(NULL, false)
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('csp', Array)
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php(185): CodeIgniter\Config\BaseService::getSharedInstance('csp', NULL)
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::csp()
+#5 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\HTTP\Response.php(157): CodeIgniter\Config\BaseService::__callStatic('csp', Array)
+#6 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php(585): CodeIgniter\HTTP\Response->__construct(Object(Config\App))
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::response(Object(Config\App), false)
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('response', Array)
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php(580): CodeIgniter\Config\BaseService::getSharedInstance('response', NULL)
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::response()
+#11 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Debug\Exceptions.php(151): CodeIgniter\Config\BaseService::__callStatic('response', Array)
+#12 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#13 {main}
+  thrown
+【Previous Exception】
+ErrorException
+require_once(D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\ThirdParty/Kint/init.php): Failed to open stream: No such file or directory
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(293): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(D:...', 'D:\\MYT_OJT1\\wed...', 293)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(293): require_once()
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(264): CodeIgniter\CodeIgniter->autoloadKint()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(223): CodeIgniter\CodeIgniter->initializeKint()
+#4 D:\MYT_OJT1\wedding_v4\backend\spark(21): CodeIgniter\CodeIgniter->initialize()
+#5 {main}
+in SYSTEMPATH\HTTP\ContentSecurityPolicy.php on line 244.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-03-05 08:50:05 --> ErrorException: require_once(D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\ThirdParty/Kint/init.php): Failed to open stream: No such file or directory
+in SYSTEMPATH\CodeIgniter.php on line 293.
+ 1 SYSTEMPATH\CodeIgniter.php(293): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\ThirdParty/Kint/init.php): Failed to open stream: No such file or directory', 'D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\CodeIgniter.php', 293)
+ 2 SYSTEMPATH\CodeIgniter.php(293): require_once()
+ 3 SYSTEMPATH\CodeIgniter.php(264): CodeIgniter\CodeIgniter->autoloadKint()
+ 4 SYSTEMPATH\CodeIgniter.php(223): CodeIgniter\CodeIgniter->initializeKint()
+ 5 ROOTPATH\spark(21): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2026-03-05 08:50:05 --> ErrorException: Cannot declare class Config\Cookie because the name is already in use
+【Previous Exception】
+ErrorException
+require_once(D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\ThirdParty/Kint/init.php): Failed to open stream: No such file or directory
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(293): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(D:...', 'D:\\MYT_OJT1\\wed...', 293)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(293): require_once()
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(264): CodeIgniter\CodeIgniter->autoloadKint()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(223): CodeIgniter\CodeIgniter->initializeKint()
+#4 D:\MYT_OJT1\wedding_v4\backend\spark(21): CodeIgniter\CodeIgniter->initialize()
+#5 {main}
+in APPPATH\Config\Cookie.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-03-05 08:50:50 --> ErrorException: require_once(D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\ThirdParty/Kint/init.php): Failed to open stream: No such file or directory
+in SYSTEMPATH\CodeIgniter.php on line 293.
+ 1 SYSTEMPATH\CodeIgniter.php(293): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\ThirdParty/Kint/init.php): Failed to open stream: No such file or directory', 'D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\CodeIgniter.php', 293)
+ 2 SYSTEMPATH\CodeIgniter.php(293): require_once()
+ 3 SYSTEMPATH\CodeIgniter.php(264): CodeIgniter\CodeIgniter->autoloadKint()
+ 4 SYSTEMPATH\CodeIgniter.php(223): CodeIgniter\CodeIgniter->initializeKint()
+ 5 ROOTPATH\spark(21): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2026-03-05 08:50:50 --> ErrorException: Uncaught ErrorException: Undefined property: Config\Paths::$viewDirectory in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Debug\Exceptions.php:297
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Debug\Exceptions.php(297): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\MYT_OJT1\\wed...', 297)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Debug\Exceptions.php(188): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+【Previous Exception】
+ErrorException
+require_once(D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\ThirdParty/Kint/init.php): Failed to open stream: No such file or directory
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(293): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(D:...', 'D:\\MYT_OJT1\\wed...', 293)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(293): require_once()
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(264): CodeIgniter\CodeIgniter->autoloadKint()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(223): CodeIgniter\CodeIgniter->initializeKint()
+#4 D:\MYT_OJT1\wedding_v4\backend\spark(21): CodeIgniter\CodeIgniter->initialize()
+#5 {main}
+in SYSTEMPATH\Debug\Exceptions.php on line 297.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-03-05 08:51:32 --> ErrorException: require_once(D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\ThirdParty/Kint/init.php): Failed to open stream: No such file or directory
+in SYSTEMPATH\CodeIgniter.php on line 293.
+ 1 SYSTEMPATH\CodeIgniter.php(293): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\ThirdParty/Kint/init.php): Failed to open stream: No such file or directory', 'D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\CodeIgniter.php', 293)
+ 2 SYSTEMPATH\CodeIgniter.php(293): require_once()
+ 3 SYSTEMPATH\CodeIgniter.php(264): CodeIgniter\CodeIgniter->autoloadKint()
+ 4 SYSTEMPATH\CodeIgniter.php(223): CodeIgniter\CodeIgniter->initializeKint()
+ 5 ROOTPATH\spark(21): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2026-03-05 08:52:20 --> ErrorException: require_once(D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\ThirdParty/Kint/init.php): Failed to open stream: No such file or directory
+in SYSTEMPATH\CodeIgniter.php on line 293.
+ 1 SYSTEMPATH\CodeIgniter.php(293): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\ThirdParty/Kint/init.php): Failed to open stream: No such file or directory', 'D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\CodeIgniter.php', 293)
+ 2 SYSTEMPATH\CodeIgniter.php(293): require_once()
+ 3 SYSTEMPATH\CodeIgniter.php(264): CodeIgniter\CodeIgniter->autoloadKint()
+ 4 SYSTEMPATH\CodeIgniter.php(223): CodeIgniter\CodeIgniter->initializeKint()
+ 5 ROOTPATH\spark(21): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2026-03-05 08:55:38 --> ErrorException: Attempt to read property "maxDepth" on null
+in SYSTEMPATH\CodeIgniter.php on line 301.
+ 1 SYSTEMPATH\CodeIgniter.php(301): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "maxDepth" on null', 'D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\CodeIgniter.php', 301)
+ 2 SYSTEMPATH\CodeIgniter.php(265): CodeIgniter\CodeIgniter->configureKint()
+ 3 SYSTEMPATH\CodeIgniter.php(223): CodeIgniter\CodeIgniter->initializeKint()
+ 4 ROOTPATH\spark(21): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2026-03-05 08:55:59 --> ErrorException: Undefined property: Config\Kint::$displayCalledFrom
+in SYSTEMPATH\CodeIgniter.php on line 302.
+ 1 SYSTEMPATH\CodeIgniter.php(302): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: Config\\Kint::$displayCalledFrom', 'D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\CodeIgniter.php', 302)
+ 2 SYSTEMPATH\CodeIgniter.php(265): CodeIgniter\CodeIgniter->configureKint()
+ 3 SYSTEMPATH\CodeIgniter.php(223): CodeIgniter\CodeIgniter->initializeKint()
+ 4 ROOTPATH\spark(21): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2026-03-05 08:57:17 --> ErrorException: Undefined property: Config\Kint::$expanded
+in SYSTEMPATH\CodeIgniter.php on line 303.
+ 1 SYSTEMPATH\CodeIgniter.php(303): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: Config\\Kint::$expanded', 'D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\CodeIgniter.php', 303)
+ 2 SYSTEMPATH\CodeIgniter.php(265): CodeIgniter\CodeIgniter->configureKint()
+ 3 SYSTEMPATH\CodeIgniter.php(223): CodeIgniter\CodeIgniter->initializeKint()
+ 4 ROOTPATH\spark(21): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2026-03-05 08:57:45 --> Error: Access to undeclared static property Kint\Renderer\RichRenderer::$sort
+in SYSTEMPATH\CodeIgniter.php on line 317.
+ 1 SYSTEMPATH\CodeIgniter.php(265): CodeIgniter\CodeIgniter->configureKint()
+ 2 SYSTEMPATH\CodeIgniter.php(223): CodeIgniter\CodeIgniter->initializeKint()
+ 3 ROOTPATH\spark(21): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2026-03-05 08:58:31 --> Error: Undefined constant Kint\Renderer\AbstractRenderer::SORT_FULL
+in SYSTEMPATH\Config\Factories.php on line 218.
+ 1 SYSTEMPATH\Config\Factories.php(168): CodeIgniter\Config\Factories::createInstance('config', 'Config\\Kint', [])
+ 2 SYSTEMPATH\Common.php(215): CodeIgniter\Config\Factories::__callStatic('config', [])
+ 3 SYSTEMPATH\CodeIgniter.php(299): config('Config\\Kint')
+ 4 SYSTEMPATH\CodeIgniter.php(265): CodeIgniter\CodeIgniter->configureKint()
+ 5 SYSTEMPATH\CodeIgniter.php(223): CodeIgniter\CodeIgniter->initializeKint()
+ 6 ROOTPATH\spark(21): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2026-03-05 08:59:19 --> Error: Access to undeclared static property Kint\Renderer\RichRenderer::$sort
+in SYSTEMPATH\CodeIgniter.php on line 317.
+ 1 SYSTEMPATH\CodeIgniter.php(265): CodeIgniter\CodeIgniter->configureKint()
+ 2 SYSTEMPATH\CodeIgniter.php(223): CodeIgniter\CodeIgniter->initializeKint()
+ 3 ROOTPATH\spark(21): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2026-03-05 09:00:52 --> TypeError: CodeIgniter\Router\RouteCollection::__construct(): Argument #3 ($routing) must be of type Config\Routing, null given, called in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php on line 618
+in SYSTEMPATH\Router\RouteCollection.php on line 286.
+ 1 SYSTEMPATH\Config\Services.php(618): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator), Object(Config\Modules), null)
+ 2 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::routes(false)
+ 3 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('routes', [...])
+ 4 SYSTEMPATH\Config\Services.php(615): CodeIgniter\Config\BaseService::getSharedInstance('routes')
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::routes()
+ 6 SYSTEMPATH\CLI\Console.php(39): CodeIgniter\Config\BaseService::__callStatic('routes', [])
+ 7 ROOTPATH\spark(24): CodeIgniter\CLI\Console->run()
+CRITICAL - 2026-03-05 09:02:45 --> ErrorException: Undefined property: Config\App::$allowedHostnames
+in SYSTEMPATH\HTTP\SiteURIFactory.php on line 248.
+ 1 SYSTEMPATH\HTTP\SiteURIFactory.php(248): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: Config\\App::$allowedHostnames', 'D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\HTTP\\SiteURIFactory.php', 248)
+ 2 SYSTEMPATH\HTTP\SiteURIFactory.php(237): CodeIgniter\HTTP\SiteURIFactory->getValidHost('localhost')
+ 3 SYSTEMPATH\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURIFactory->getHost()
+ 4 SYSTEMPATH\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+ 5 SYSTEMPATH\Config\Services.php(805): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(null, false)
+ 7 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', [...])
+ 8 SYSTEMPATH\Config\Services.php(798): CodeIgniter\Config\BaseService::getSharedInstance('uri', null)
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+10 SYSTEMPATH\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', [])
+11 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+12 SYSTEMPATH\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+13 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+14 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+15 SYSTEMPATH\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+17 SYSTEMPATH\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+18 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+19 SYSTEMPATH\CodeIgniter.php(656): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+20 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+21 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+22 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+CRITICAL - 2026-03-05 09:02:45 --> ErrorException: Uncaught ErrorException: Undefined property: Config\App::$allowedHostnames in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php:248
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(248): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\MYT_OJT1\\wed...', 248)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(237): CodeIgniter\HTTP\SiteURIFactory->getValidHost('localhost')
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURIFactory->getHost()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php(805): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php(798): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Debug\Exceptions.php(150): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#18 {main}
+  thrown
+【Previous Exception】
+ErrorException
+Undefined property: Config\App::$allowedHostnames
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(248): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\MYT_OJT1\\wed...', 248)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(237): CodeIgniter\HTTP\SiteURIFactory->getValidHost('localhost')
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURIFactory->getHost()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php(805): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php(798): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#13 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#15 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#16 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#17 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#18 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(656): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#19 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+#20 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#21 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#22 {main}
+in SYSTEMPATH\HTTP\SiteURIFactory.php on line 248.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-03-05 09:04:36 --> ErrorException: Attempt to read property "platforms" on null
+in SYSTEMPATH\HTTP\UserAgent.php on line 289.
+ 1 SYSTEMPATH\HTTP\UserAgent.php(289): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "platforms" on null', 'D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\HTTP\\UserAgent.php', 289)
+ 2 SYSTEMPATH\HTTP\UserAgent.php(275): CodeIgniter\HTTP\UserAgent->setPlatform()
+ 3 SYSTEMPATH\HTTP\UserAgent.php(111): CodeIgniter\HTTP\UserAgent->compileData()
+ 4 SYSTEMPATH\Config\Services.php(568): CodeIgniter\HTTP\UserAgent->__construct()
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+ 8 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+ 9 SYSTEMPATH\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+11 SYSTEMPATH\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+12 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+13 SYSTEMPATH\CodeIgniter.php(656): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+14 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+15 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+CRITICAL - 2026-03-05 09:04:36 --> ErrorException: Uncaught ErrorException: Attempt to read property "platforms" on null in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\HTTP\UserAgent.php:289
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\HTTP\UserAgent.php(289): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'D:\\MYT_OJT1\\wed...', 289)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\HTTP\UserAgent.php(275): CodeIgniter\HTTP\UserAgent->setPlatform()
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\HTTP\UserAgent.php(111): CodeIgniter\HTTP\UserAgent->compileData()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php(568): CodeIgniter\HTTP\UserAgent->__construct()
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#5 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#6 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Debug\Exceptions.php(150): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#11 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#12 {main}
+  thrown
+【Previous Exception】
+ErrorException
+Attempt to read property "platforms" on null
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\HTTP\UserAgent.php(289): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'D:\\MYT_OJT1\\wed...', 289)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\HTTP\UserAgent.php(275): CodeIgniter\HTTP\UserAgent->setPlatform()
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\HTTP\UserAgent.php(111): CodeIgniter\HTTP\UserAgent->compileData()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php(568): CodeIgniter\HTTP\UserAgent->__construct()
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#5 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#6 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#11 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#12 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(656): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#13 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+#14 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#15 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#16 {main}
+in SYSTEMPATH\HTTP\UserAgent.php on line 289.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-03-05 09:07:26 --> TypeError: CodeIgniter\View\View::__construct(): Argument #1 ($config) must be of type Config\View, null given, called in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php on line 505
+in SYSTEMPATH\View\View.php on line 144.
+ 1 SYSTEMPATH\Config\Services.php(505): CodeIgniter\View\View->__construct(null, 'D:\\MYT_OJT1\\wedding_v4\\backend\\app\\Config/../Views', Object(CodeIgniter\Autoloader\FileLocator), true, Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::renderer('D:\\MYT_OJT1\\wedding_v4\\backend\\app\\Config/../Views', null, false)
+ 3 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('renderer', [...])
+ 4 SYSTEMPATH\Config\Services.php(499): CodeIgniter\Config\BaseService::getSharedInstance('renderer', null, null)
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::renderer()
+ 6 SYSTEMPATH\Config\Services.php(824): CodeIgniter\Config\BaseService::__callStatic('renderer', [])
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::validation(null, false)
+ 8 SYSTEMPATH\BaseModel.php(344): CodeIgniter\Config\BaseService::__callStatic('validation', [...])
+ 9 SYSTEMPATH\Model.php(158): CodeIgniter\BaseModel->__construct(null)
+10 SYSTEMPATH\Config\Factories.php(218): CodeIgniter\Model->__construct(Object(CodeIgniter\Database\MySQLi\Connection))
+11 SYSTEMPATH\Config\Factories.php(168): CodeIgniter\Config\Factories::createInstance('models', 'App\\Models\\Guest', [...])
+12 SYSTEMPATH\Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+13 SYSTEMPATH\RESTful\BaseResource.php(68): model('App\\Models\\Guest')
+14 SYSTEMPATH\RESTful\BaseResource.php(49): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Guest')
+15 SYSTEMPATH\CodeIgniter.php(916): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+16 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+17 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+18 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+19 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+CRITICAL - 2026-03-05 09:08:49 --> ErrorException: Attempt to read property "ruleSets" on null
+in SYSTEMPATH\Validation\Validation.php on line 115.
+ 1 SYSTEMPATH\Validation\Validation.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "ruleSets" on null', 'D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\Validation\\Validation.php', 115)
+ 2 SYSTEMPATH\Config\Services.php(824): CodeIgniter\Validation\Validation->__construct(null, Object(CodeIgniter\View\View))
+ 3 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::validation(null, false)
+ 4 SYSTEMPATH\BaseModel.php(344): CodeIgniter\Config\BaseService::__callStatic('validation', [...])
+ 5 SYSTEMPATH\Model.php(158): CodeIgniter\BaseModel->__construct(null)
+ 6 SYSTEMPATH\Config\Factories.php(218): CodeIgniter\Model->__construct(Object(CodeIgniter\Database\MySQLi\Connection))
+ 7 SYSTEMPATH\Config\Factories.php(168): CodeIgniter\Config\Factories::createInstance('models', 'App\\Models\\Guest', [...])
+ 8 SYSTEMPATH\Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 9 SYSTEMPATH\RESTful\BaseResource.php(68): model('App\\Models\\Guest')
+10 SYSTEMPATH\RESTful\BaseResource.php(49): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Guest')
+11 SYSTEMPATH\CodeIgniter.php(916): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+ERROR - 2026-03-05 09:09:24 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'wedding_db', 3306, '', 0)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#7 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#12 {main}
+CRITICAL - 2026-03-05 09:09:24 --> ErrorException: Uncaught Error: Undefined constant "CodeIgniter\Database\Exceptions\EXIT_DATABASE" in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\Exceptions\DatabaseException.php:21
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Debug\Exceptions.php(430): CodeIgniter\Database\Exceptions\DatabaseException->getExitCode()
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Debug\Exceptions.php(125): CodeIgniter\Debug\Exceptions->determineCodes(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#3 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#4 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#5 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#6 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#11 {main}
+in SYSTEMPATH\Database\Exceptions\DatabaseException.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2026-03-05 09:15:17 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'wedding_db', 3306, '', 0)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#7 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#12 {main}
+CRITICAL - 2026-03-05 09:15:17 --> ErrorException: Uncaught Error: Undefined constant "CodeIgniter\Database\Exceptions\EXIT_DATABASE" in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\Exceptions\DatabaseException.php:21
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Debug\Exceptions.php(430): CodeIgniter\Database\Exceptions\DatabaseException->getExitCode()
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Debug\Exceptions.php(125): CodeIgniter\Debug\Exceptions->determineCodes(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#3 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#4 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#5 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#6 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#11 {main}
+in SYSTEMPATH\Database\Exceptions\DatabaseException.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2026-03-05 09:19:29 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'wedding_db', 3306, '', 0)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#7 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#12 {main}
+CRITICAL - 2026-03-05 09:19:29 --> ErrorException: Uncaught Error: Undefined constant "CodeIgniter\Database\Exceptions\EXIT_DATABASE" in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\Exceptions\DatabaseException.php:21
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Debug\Exceptions.php(430): CodeIgniter\Database\Exceptions\DatabaseException->getExitCode()
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Debug\Exceptions.php(125): CodeIgniter\Debug\Exceptions->determineCodes(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#3 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#4 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#5 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#6 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#11 {main}
+in SYSTEMPATH\Database\Exceptions\DatabaseException.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2026-03-05 09:19:30 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'wedding_db', 3306, '', 0)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#7 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#12 {main}
+CRITICAL - 2026-03-05 09:19:30 --> ErrorException: Uncaught Error: Undefined constant "CodeIgniter\Database\Exceptions\EXIT_DATABASE" in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\Exceptions\DatabaseException.php:21
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Debug\Exceptions.php(430): CodeIgniter\Database\Exceptions\DatabaseException->getExitCode()
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Debug\Exceptions.php(125): CodeIgniter\Debug\Exceptions->determineCodes(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#3 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#4 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#5 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#6 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#11 {main}
+in SYSTEMPATH\Database\Exceptions\DatabaseException.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2026-03-05 09:20:13 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('127.0.0.1', 'root', '', 'wedding_db', 3306, '', 0)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#7 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#12 {main}
+CRITICAL - 2026-03-05 09:20:13 --> ErrorException: Uncaught Error: Undefined constant "CodeIgniter\Database\Exceptions\EXIT_DATABASE" in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\Exceptions\DatabaseException.php:21
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Debug\Exceptions.php(430): CodeIgniter\Database\Exceptions\DatabaseException->getExitCode()
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Debug\Exceptions.php(125): CodeIgniter\Debug\Exceptions->determineCodes(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#3 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#4 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#5 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#6 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#11 {main}
+in SYSTEMPATH\Database\Exceptions\DatabaseException.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2026-03-05 09:20:18 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('127.0.0.1', 'root', '', 'wedding_db', 3306, '', 0)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#7 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#12 {main}
+CRITICAL - 2026-03-05 09:20:18 --> ErrorException: Uncaught Error: Undefined constant "CodeIgniter\Database\Exceptions\EXIT_DATABASE" in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\Exceptions\DatabaseException.php:21
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Debug\Exceptions.php(430): CodeIgniter\Database\Exceptions\DatabaseException->getExitCode()
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Debug\Exceptions.php(125): CodeIgniter\Debug\Exceptions->determineCodes(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#3 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#4 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#5 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#6 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#11 {main}
+in SYSTEMPATH\Database\Exceptions\DatabaseException.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2026-03-05 09:20:30 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('127.0.0.1', 'root', '', 'wedding_db', 3306, '', 0)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#7 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#12 {main}
+CRITICAL - 2026-03-05 09:20:30 --> ErrorException: Uncaught Error: Undefined constant "CodeIgniter\Database\Exceptions\EXIT_DATABASE" in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\Exceptions\DatabaseException.php:21
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Debug\Exceptions.php(430): CodeIgniter\Database\Exceptions\DatabaseException->getExitCode()
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Debug\Exceptions.php(125): CodeIgniter\Debug\Exceptions->determineCodes(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#3 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#4 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#5 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#6 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#11 {main}
+in SYSTEMPATH\Database\Exceptions\DatabaseException.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2026-03-05 09:21:25 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('127.0.0.1', 'root', '', 'wedding_db', 3306, '', 0)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#7 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#12 {main}
+CRITICAL - 2026-03-05 09:21:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `guests`
+WHERE `is_deleted` = :is_deleted:
+ORDER BY `name` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Guests->list()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+ERROR - 2026-03-05 09:25:07 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('127.0.0.1', 'root', '', 'wedding_db', 3306, '', 0)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#7 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#12 {main}
+CRITICAL - 2026-03-05 09:25:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `guests`
+WHERE `is_deleted` = :is_deleted:
+ORDER BY `name` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Guests->list()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+ERROR - 2026-03-05 09:25:08 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('127.0.0.1', 'root', '', 'wedding_db', 3306, '', 0)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#7 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#12 {main}
+CRITICAL - 2026-03-05 09:25:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `guests`
+WHERE `is_deleted` = :is_deleted:
+ORDER BY `name` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Guests->list()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+ERROR - 2026-03-05 09:25:14 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('127.0.0.1', 'root', '', 'wedding_db', 3306, '', 0)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#7 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#12 {main}
+CRITICAL - 2026-03-05 09:25:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `guests`
+WHERE `is_deleted` = :is_deleted:
+ORDER BY `name` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Guests->list()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+ERROR - 2026-03-05 09:26:11 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('127.0.0.1', 'root', '', 'wedding_db', 3306, '', 0)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#7 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#12 {main}
+CRITICAL - 2026-03-05 09:26:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `guests`
+WHERE `is_deleted` = :is_deleted:
+ORDER BY `name` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Guests->list()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+ERROR - 2026-03-05 09:26:13 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('127.0.0.1', 'root', '', 'wedding_db', 3306, '', 0)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#7 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#12 {main}
+CRITICAL - 2026-03-05 09:26:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `guests`
+WHERE `is_deleted` = :is_deleted:
+ORDER BY `name` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Guests->list()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+ERROR - 2026-03-05 09:26:14 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('127.0.0.1', 'root', '', 'wedding_db', 3306, '', 0)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#7 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#12 {main}
+CRITICAL - 2026-03-05 09:26:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `guests`
+WHERE `is_deleted` = :is_deleted:
+ORDER BY `name` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Guests->list()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+ERROR - 2026-03-05 09:26:15 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('127.0.0.1', 'root', '', 'wedding_db', 3306, '', 0)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#7 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->list()
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#12 {main}
+CRITICAL - 2026-03-05 09:26:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `guests`
+WHERE `is_deleted` = :is_deleted:
+ORDER BY `name` ASC', [...], false)
+ 3 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\Guest.php(48): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Guests.php(83): App\Models\Guest->getAll('')
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Guests->list()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+CRITICAL - 2026-03-05 09:41:04 --> TypeError: CodeIgniter\Format\Format::__construct(): Argument #1 ($config) must be of type Config\Format, null given, called in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php on line 309
+in SYSTEMPATH\Format\Format.php on line 34.
+ 1 SYSTEMPATH\Config\Services.php(309): CodeIgniter\Format\Format->__construct(null)
+ 2 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::format(null, false)
+ 3 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('format', [...])
+ 4 SYSTEMPATH\Config\Services.php(304): CodeIgniter\Config\BaseService::getSharedInstance('format', null)
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::format()
+ 6 SYSTEMPATH\API\ResponseTrait.php(316): CodeIgniter\Config\BaseService::__callStatic('format', [])
+ 7 SYSTEMPATH\API\ResponseTrait.php(98): CodeIgniter\RESTful\ResourceController->format([...])
+ 8 APPPATH\Core\MYT_Controller.php(17): CodeIgniter\RESTful\ResourceController->respond([...], 200)
+ 9 APPPATH\Controllers\Guests.php(90): App\Core\MYT_Controller->successResponse([...], 'Guests retrieved.')
+10 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Guests->list()
+11 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+CRITICAL - 2026-03-05 09:41:40 --> TypeError: CodeIgniter\Debug\Toolbar::__construct(): Argument #1 ($config) must be of type Config\Toolbar, null given, called in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php on line 785
+in SYSTEMPATH\Debug\Toolbar.php on line 50.
+ 1 SYSTEMPATH\Config\Services.php(785): CodeIgniter\Debug\Toolbar->__construct(null)
+ 2 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::toolbar(null, false)
+ 3 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('toolbar', [...])
+ 4 SYSTEMPATH\Config\Services.php(780): CodeIgniter\Config\BaseService::getSharedInstance('toolbar', null)
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::toolbar()
+ 6 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Config\BaseService::__callStatic('toolbar', [])
+ 7 SYSTEMPATH\Filters\Filters.php(211): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 8 SYSTEMPATH\CodeIgniter.php(523): CodeIgniter\Filters\Filters->run('api/guests/list', 'after')
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+CRITICAL - 2026-03-05 09:41:42 --> TypeError: CodeIgniter\Debug\Toolbar::__construct(): Argument #1 ($config) must be of type Config\Toolbar, null given, called in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php on line 785
+in SYSTEMPATH\Debug\Toolbar.php on line 50.
+ 1 SYSTEMPATH\Config\Services.php(785): CodeIgniter\Debug\Toolbar->__construct(null)
+ 2 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::toolbar(null, false)
+ 3 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('toolbar', [...])
+ 4 SYSTEMPATH\Config\Services.php(780): CodeIgniter\Config\BaseService::getSharedInstance('toolbar', null)
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::toolbar()
+ 6 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Config\BaseService::__callStatic('toolbar', [])
+ 7 SYSTEMPATH\Filters\Filters.php(211): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 8 SYSTEMPATH\CodeIgniter.php(523): CodeIgniter\Filters\Filters->run('api/guests/list', 'after')
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+CRITICAL - 2026-03-05 09:41:54 --> TypeError: CodeIgniter\Debug\Toolbar::__construct(): Argument #1 ($config) must be of type Config\Toolbar, null given, called in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Config\Services.php on line 785
+in SYSTEMPATH\Debug\Toolbar.php on line 50.
+ 1 SYSTEMPATH\Config\Services.php(785): CodeIgniter\Debug\Toolbar->__construct(null)
+ 2 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::toolbar(null, false)
+ 3 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('toolbar', [...])
+ 4 SYSTEMPATH\Config\Services.php(780): CodeIgniter\Config\BaseService::getSharedInstance('toolbar', null)
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::toolbar()
+ 6 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Config\BaseService::__callStatic('toolbar', [])
+ 7 SYSTEMPATH\Filters\Filters.php(211): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 8 SYSTEMPATH\CodeIgniter.php(523): CodeIgniter\Filters\Filters->run('api/guests/list', 'after')
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+CRITICAL - 2026-03-05 09:42:13 --> Error: Undefined constant "EXIT_SUCCESS"
+in FCPATH\index.php on line 87.
+ 1 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once()
+CRITICAL - 2026-03-05 09:46:55 --> TypeError: str_replace(): Argument #3 ($subject) must be of type array|string, bool given
+in VENDORPATH\kint-php\kint\src\Kint.php on line 634.
+ 1 VENDORPATH\kint-php\kint\src\Kint.php(634): str_replace([...], [...], false)
+ 2 VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php(547): Kint\Kint::getIdeLink('D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar.php', 401)
+ 3 VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php(471): Kint\Renderer\RichRenderer->ideLink('D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar.php', 401)
+ 4 VENDORPATH\kint-php\kint\src\Kint.php(271): Kint\Renderer\RichRenderer->postRender()
+ 5 VENDORPATH\kint-php\kint\src\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+ 6 SYSTEMPATH\Debug\Toolbar.php(401): Kint\Kint::dump('')
+ 7 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 8 SYSTEMPATH\Filters\Filters.php(211): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 9 SYSTEMPATH\CodeIgniter.php(523): CodeIgniter\Filters\Filters->run('', 'after')
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+CRITICAL - 2026-03-05 09:46:58 --> TypeError: str_replace(): Argument #3 ($subject) must be of type array|string, bool given
+in VENDORPATH\kint-php\kint\src\Kint.php on line 634.
+ 1 VENDORPATH\kint-php\kint\src\Kint.php(634): str_replace([...], [...], false)
+ 2 VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php(547): Kint\Kint::getIdeLink('D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar.php', 401)
+ 3 VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php(471): Kint\Renderer\RichRenderer->ideLink('D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar.php', 401)
+ 4 VENDORPATH\kint-php\kint\src\Kint.php(271): Kint\Renderer\RichRenderer->postRender()
+ 5 VENDORPATH\kint-php\kint\src\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+ 6 SYSTEMPATH\Debug\Toolbar.php(401): Kint\Kint::dump('')
+ 7 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 8 SYSTEMPATH\Filters\Filters.php(211): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 9 SYSTEMPATH\CodeIgniter.php(523): CodeIgniter\Filters\Filters->run('', 'after')
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+CRITICAL - 2026-03-05 09:47:06 --> TypeError: str_replace(): Argument #3 ($subject) must be of type array|string, bool given
+in VENDORPATH\kint-php\kint\src\Kint.php on line 634.
+ 1 VENDORPATH\kint-php\kint\src\Kint.php(634): str_replace([...], [...], false)
+ 2 VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php(547): Kint\Kint::getIdeLink('D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar.php', 401)
+ 3 VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php(471): Kint\Renderer\RichRenderer->ideLink('D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar.php', 401)
+ 4 VENDORPATH\kint-php\kint\src\Kint.php(271): Kint\Renderer\RichRenderer->postRender()
+ 5 VENDORPATH\kint-php\kint\src\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+ 6 SYSTEMPATH\Debug\Toolbar.php(401): Kint\Kint::dump('')
+ 7 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 8 SYSTEMPATH\Filters\Filters.php(211): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 9 SYSTEMPATH\CodeIgniter.php(523): CodeIgniter\Filters\Filters->run('', 'after')
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+CRITICAL - 2026-03-05 09:47:27 --> TypeError: str_replace(): Argument #3 ($subject) must be of type array|string, bool given
+in VENDORPATH\kint-php\kint\src\Kint.php on line 634.
+ 1 VENDORPATH\kint-php\kint\src\Kint.php(634): str_replace([...], [...], false)
+ 2 VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php(547): Kint\Kint::getIdeLink('D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar.php', 401)
+ 3 VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php(471): Kint\Renderer\RichRenderer->ideLink('D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar.php', 401)
+ 4 VENDORPATH\kint-php\kint\src\Kint.php(271): Kint\Renderer\RichRenderer->postRender()
+ 5 VENDORPATH\kint-php\kint\src\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+ 6 SYSTEMPATH\Debug\Toolbar.php(401): Kint\Kint::dump('')
+ 7 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 8 SYSTEMPATH\Filters\Filters.php(211): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 9 SYSTEMPATH\CodeIgniter.php(523): CodeIgniter\Filters\Filters->run('', 'after')
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+CRITICAL - 2026-03-05 09:47:28 --> TypeError: str_replace(): Argument #3 ($subject) must be of type array|string, bool given
+in VENDORPATH\kint-php\kint\src\Kint.php on line 634.
+ 1 VENDORPATH\kint-php\kint\src\Kint.php(634): str_replace([...], [...], false)
+ 2 VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php(547): Kint\Kint::getIdeLink('D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar.php', 401)
+ 3 VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php(471): Kint\Renderer\RichRenderer->ideLink('D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar.php', 401)
+ 4 VENDORPATH\kint-php\kint\src\Kint.php(271): Kint\Renderer\RichRenderer->postRender()
+ 5 VENDORPATH\kint-php\kint\src\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+ 6 SYSTEMPATH\Debug\Toolbar.php(401): Kint\Kint::dump('')
+ 7 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 8 SYSTEMPATH\Filters\Filters.php(211): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 9 SYSTEMPATH\CodeIgniter.php(523): CodeIgniter\Filters\Filters->run('', 'after')
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+CRITICAL - 2026-03-05 09:47:28 --> TypeError: str_replace(): Argument #3 ($subject) must be of type array|string, bool given
+in VENDORPATH\kint-php\kint\src\Kint.php on line 634.
+ 1 VENDORPATH\kint-php\kint\src\Kint.php(634): str_replace([...], [...], false)
+ 2 VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php(547): Kint\Kint::getIdeLink('D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar.php', 401)
+ 3 VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php(471): Kint\Renderer\RichRenderer->ideLink('D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar.php', 401)
+ 4 VENDORPATH\kint-php\kint\src\Kint.php(271): Kint\Renderer\RichRenderer->postRender()
+ 5 VENDORPATH\kint-php\kint\src\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+ 6 SYSTEMPATH\Debug\Toolbar.php(401): Kint\Kint::dump('')
+ 7 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 8 SYSTEMPATH\Filters\Filters.php(211): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 9 SYSTEMPATH\CodeIgniter.php(523): CodeIgniter\Filters\Filters->run('', 'after')
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+CRITICAL - 2026-03-05 09:47:29 --> TypeError: str_replace(): Argument #3 ($subject) must be of type array|string, bool given
+in VENDORPATH\kint-php\kint\src\Kint.php on line 634.
+ 1 VENDORPATH\kint-php\kint\src\Kint.php(634): str_replace([...], [...], false)
+ 2 VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php(547): Kint\Kint::getIdeLink('D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar.php', 401)
+ 3 VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php(471): Kint\Renderer\RichRenderer->ideLink('D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar.php', 401)
+ 4 VENDORPATH\kint-php\kint\src\Kint.php(271): Kint\Renderer\RichRenderer->postRender()
+ 5 VENDORPATH\kint-php\kint\src\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+ 6 SYSTEMPATH\Debug\Toolbar.php(401): Kint\Kint::dump('')
+ 7 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 8 SYSTEMPATH\Filters\Filters.php(211): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 9 SYSTEMPATH\CodeIgniter.php(523): CodeIgniter\Filters\Filters->run('', 'after')
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+CRITICAL - 2026-03-05 09:47:29 --> TypeError: str_replace(): Argument #3 ($subject) must be of type array|string, bool given
+in VENDORPATH\kint-php\kint\src\Kint.php on line 634.
+ 1 VENDORPATH\kint-php\kint\src\Kint.php(634): str_replace([...], [...], false)
+ 2 VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php(547): Kint\Kint::getIdeLink('D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar.php', 401)
+ 3 VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php(471): Kint\Renderer\RichRenderer->ideLink('D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar.php', 401)
+ 4 VENDORPATH\kint-php\kint\src\Kint.php(271): Kint\Renderer\RichRenderer->postRender()
+ 5 VENDORPATH\kint-php\kint\src\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+ 6 SYSTEMPATH\Debug\Toolbar.php(401): Kint\Kint::dump('')
+ 7 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 8 SYSTEMPATH\Filters\Filters.php(211): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 9 SYSTEMPATH\CodeIgniter.php(523): CodeIgniter\Filters\Filters->run('', 'after')
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+CRITICAL - 2026-03-05 09:47:29 --> TypeError: str_replace(): Argument #3 ($subject) must be of type array|string, bool given
+in VENDORPATH\kint-php\kint\src\Kint.php on line 634.
+ 1 VENDORPATH\kint-php\kint\src\Kint.php(634): str_replace([...], [...], false)
+ 2 VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php(547): Kint\Kint::getIdeLink('D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar.php', 401)
+ 3 VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php(471): Kint\Renderer\RichRenderer->ideLink('D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar.php', 401)
+ 4 VENDORPATH\kint-php\kint\src\Kint.php(271): Kint\Renderer\RichRenderer->postRender()
+ 5 VENDORPATH\kint-php\kint\src\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+ 6 SYSTEMPATH\Debug\Toolbar.php(401): Kint\Kint::dump('')
+ 7 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 8 SYSTEMPATH\Filters\Filters.php(211): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 9 SYSTEMPATH\CodeIgniter.php(523): CodeIgniter\Filters\Filters->run('', 'after')
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+CRITICAL - 2026-03-05 09:47:29 --> TypeError: str_replace(): Argument #3 ($subject) must be of type array|string, bool given
+in VENDORPATH\kint-php\kint\src\Kint.php on line 634.
+ 1 VENDORPATH\kint-php\kint\src\Kint.php(634): str_replace([...], [...], false)
+ 2 VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php(547): Kint\Kint::getIdeLink('D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar.php', 401)
+ 3 VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php(471): Kint\Renderer\RichRenderer->ideLink('D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar.php', 401)
+ 4 VENDORPATH\kint-php\kint\src\Kint.php(271): Kint\Renderer\RichRenderer->postRender()
+ 5 VENDORPATH\kint-php\kint\src\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+ 6 SYSTEMPATH\Debug\Toolbar.php(401): Kint\Kint::dump('')
+ 7 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 8 SYSTEMPATH\Filters\Filters.php(211): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 9 SYSTEMPATH\CodeIgniter.php(523): CodeIgniter\Filters\Filters->run('', 'after')
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+CRITICAL - 2026-03-05 09:48:11 --> TypeError: str_replace(): Argument #3 ($subject) must be of type array|string, bool given
+in VENDORPATH\kint-php\kint\src\Kint.php on line 634.
+ 1 VENDORPATH\kint-php\kint\src\Kint.php(634): str_replace([...], [...], false)
+ 2 VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php(547): Kint\Kint::getIdeLink('D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar.php', 401)
+ 3 VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php(471): Kint\Renderer\RichRenderer->ideLink('D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar.php', 401)
+ 4 VENDORPATH\kint-php\kint\src\Kint.php(271): Kint\Renderer\RichRenderer->postRender()
+ 5 VENDORPATH\kint-php\kint\src\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+ 6 SYSTEMPATH\Debug\Toolbar.php(401): Kint\Kint::dump('')
+ 7 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 8 SYSTEMPATH\Filters\Filters.php(211): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 9 SYSTEMPATH\CodeIgniter.php(523): CodeIgniter\Filters\Filters->run('', 'after')
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+CRITICAL - 2026-03-05 09:48:47 --> TypeError: str_replace(): Argument #3 ($subject) must be of type array|string, bool given
+in VENDORPATH\kint-php\kint\src\Kint.php on line 634.
+ 1 VENDORPATH\kint-php\kint\src\Kint.php(634): str_replace([...], [...], false)
+ 2 VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php(547): Kint\Kint::getIdeLink('D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar.php', 401)
+ 3 VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php(471): Kint\Renderer\RichRenderer->ideLink('D:\\MYT_OJT1\\wedding_v4\\backend\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar.php', 401)
+ 4 VENDORPATH\kint-php\kint\src\Kint.php(271): Kint\Renderer\RichRenderer->postRender()
+ 5 VENDORPATH\kint-php\kint\src\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+ 6 SYSTEMPATH\Debug\Toolbar.php(401): Kint\Kint::dump('')
+ 7 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 8 SYSTEMPATH\Filters\Filters.php(211): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 9 SYSTEMPATH\CodeIgniter.php(523): CodeIgniter\Filters\Filters->run('', 'after')
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')
+CRITICAL - 2026-03-05 09:49:21 --> Error: Undefined constant "EXIT_SUCCESS"
+in FCPATH\index.php on line 87.
+ 1 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once()
+CRITICAL - 2026-03-05 09:49:22 --> Error: Undefined constant "EXIT_SUCCESS"
+in FCPATH\index.php on line 87.
+
