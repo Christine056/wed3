@@ -1,0 +1,50 @@
+ERROR - 2026-03-06 04:43:09 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('127.0.0.1', 'root', '', 'wedding_db', 3308, '', 0)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(679): CodeIgniter\Model->doFirst()
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(30): CodeIgniter\BaseModel->first()
+#7 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(25): App\Models\Guest->findByPassword('GUEST001')
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->login()
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#10 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\BaseModel.php(679): CodeIgniter\Model->doFirst()
+#5 D:\MYT_OJT1\wedding_v4\backend\app\Models\Guest.php(30): CodeIgniter\BaseModel->first()
+#6 D:\MYT_OJT1\wedding_v4\backend\app\Controllers\Guests.php(25): App\Models\Guest->findByPassword('GUEST001')
+#7 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Guests->login()
+#8 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+#9 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\MYT_OJT1\wedding_v4\backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\MYT_OJT1\wedding_v4\backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wed...')
+#12 {main}
+CRITICAL - 2026-03-06 04:43:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `guests`
+WHERE `password` = :password:
+AND `is_deleted` = :is_deleted:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\Guest.php(30): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Guests.php(25): App\Models\Guest->findByPassword('GUEST001')
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Guests->login()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guests))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MYT_OJT1\\wedding_v4\\backend\\public\\index.php')

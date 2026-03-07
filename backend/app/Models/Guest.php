@@ -13,9 +13,9 @@ class Guest extends Model
     protected $useSoftDeletes = false;
 
     protected $allowedFields = [
-        'name', 'password', 'reserved_seats', 'children_count', 'plus_one_count',
-        'attended_count', 'is_attending', 'status', 'message',
-        'added_by', 'added_on', 'updated_by', 'updated_on', 'is_deleted',
+        'name', 'password', 'reserved_seats', 'table_number', 'tablemates',
+        'children_count', 'plus_one_count', 'attended_count', 'is_attending', 
+        'status', 'message', 'added_by', 'added_on', 'updated_by', 'updated_on', 'is_deleted',
     ];
 
     protected $useTimestamps = false;

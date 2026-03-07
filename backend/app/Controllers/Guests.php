@@ -86,6 +86,10 @@ class Guests extends MYT_Controller
         foreach ($guests as &$g) {
             unset($g['password']);
         }
+        
+        if (!empty($guest['tablemates'])) {
+    $guest['tablemates'] = json_decode($guest['tablemates'], true);
+}
 
         return $this->successResponse($guests, 'Guests retrieved.');
     }
