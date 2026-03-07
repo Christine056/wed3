@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Great+Vibes&display=swap');
+
+:root {
+  --black: #1a1a1a;
+  --gold: #C9A84C;
+  --gold-bright: #FFD700;
+  --gold-light: #e8c96d;
+  --white: #FFFFFF;
+  --cream: #FAF7F0;
+  --dark-card: #242424;
+  --border-gold: rgba(201, 168, 76, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  color: var(--gold);
+}
+
+.script-font {
+  font-family: 'Great Vibes', cursive;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 3px;
+}
+
+.gold-divider {
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 1rem auto;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  background-color: var(--black);
+  padding: 2rem 1rem;
+}
+
+.card-dark {
+  background: var(--dark-card);
+  border: 1px solid var(--border-gold);
+  border-radius: 8px;
+  padding: 2rem;
+}
