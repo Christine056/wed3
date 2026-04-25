@@ -1,5 +1,8 @@
 import React from 'react';
+import useIsMobile from '../../../Helpers/Utilities/useIsMobile';
 import accomHotel from '../../../Assets/Images/accom-hotel.jpg';
+import flowerGift1 from '../../../Assets/Images/flower_gift1.png';
+import flowerGift2 from '../../../Assets/Images/flower_gift2.png';
 
 if (!document.head.querySelector('[href*="Great+Vibes"]')) {
   const link = document.createElement('link');
@@ -13,11 +16,16 @@ const GOLD = '#B59D58';
 const GOLD_LIGHT = '#D4B96A';
 
 const AccomodationsSection = ({ sectionRef }) => {
+  const isMobile = useIsMobile();
+
   return (
     <section
       ref={sectionRef}
       id="accommodation"
       style={{
+        background: 'rgba(255, 255, 255, 0.25)',
+        backdropFilter: 'blur(6px)',
+        WebkitBackdropFilter: 'blur(6px)',
         position: 'relative',
         overflow: 'hidden',
         minHeight: '60vh',
@@ -25,10 +33,35 @@ const AccomodationsSection = ({ sectionRef }) => {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: 'clamp(60px, 10vw, 120px) clamp(18px, 5vw, 40px)',
+        padding: isMobile ? '40px 18px' : 'clamp(60px, 10vw, 120px) clamp(18px, 5vw, 40px)',
         textAlign: 'center',
       }}
     >
+
+      {/* Left flower */}
+      <img src={flowerGift1} alt="" style={{
+        position: 'absolute',
+        top: isMobile ? '-10px' : '-40px',
+        left: isMobile ? -70 : -160,
+        width: isMobile ? '35%' : '22%',
+        height: isMobile ? '107%' : '150%',
+        pointerEvents: 'none',
+        zIndex: 2,
+        objectFit: 'fill',
+      }} />
+
+      {/* Right flower */}
+      <img src={flowerGift2} alt="" style={{
+        position: 'absolute',
+        top: isMobile ? '-10px' : '-35px',
+        right: isMobile ? -70 : -160,
+        width: isMobile ? '35%' : '22%',
+        height: isMobile ? '107%' : '150%',
+        pointerEvents: 'none',
+        zIndex: 2,
+        objectFit: 'fill',
+      }} />
+
       <div style={{
         position: 'relative',
         zIndex: 3,
@@ -41,10 +74,10 @@ const AccomodationsSection = ({ sectionRef }) => {
         {/* Title */}
         <p style={{
           fontFamily: 'Great Vibes',
-          fontSize: 'clamp(2.2rem, 6vw, 4.2rem)',
-          margin: '0 0 clamp(20px, 3vw, 32px)',
+          fontSize: isMobile ? '2.2rem' : 'clamp(2.2rem, 6vw, 4.2rem)',
+          margin: isMobile ? '0 0 16px' : '0 0 clamp(20px, 3vw, 32px)',
           lineHeight: 1.1,
-          color: '#1e4c79',
+          color: GOLD,
         }}>
           Accommodation
         </p>
@@ -55,29 +88,30 @@ const AccomodationsSection = ({ sectionRef }) => {
           flexDirection: 'column',
           alignItems: 'center',
           width: '100%',
-          maxWidth: 'clamp(320px, 90vw, 820px)',
-          border: `1px solid rgba(181,157,88,0.25)`,
+          maxWidth: isMobile ? '300px' : 'clamp(320px, 60vw, 620px)',
+          border: `1px solid rgba(181,157,88,0.12)`,
           borderRadius: '20px',
-          padding: 'clamp(24px, 4vw, 32px) clamp(12px, 4vw, 36px)',
-          gap: 'clamp(12px, 2vw, 20px)',
+          background: '#ffffff',
+          padding: isMobile ? '16px 12px' : 'clamp(24px, 4vw, 32px) clamp(12px, 4vw, 36px)',
+          gap: isMobile ? '10px' : 'clamp(12px, 2vw, 20px)',
           boxSizing: 'border-box',
         }}>
 
           {/* Hotel name */}
           <p style={{
             fontFamily: 'Gambarino, serif',
-            fontSize: 'clamp(1.1rem, 3vw, 1.8rem)',
+            fontSize: isMobile ? '1rem' : 'clamp(1.1rem, 3vw, 1.8rem)',
             fontWeight: 400,
             margin: 0,
             lineHeight: 1.2,
-            color: '#2a5a8a',
+            color: GOLD,
           }}>
             Radisson Blu Hotel
           </p>
 
           {/* Gold divider */}
           <div style={{
-            width: 'clamp(160px, 40%, 320px)',
+            width: isMobile ? '120px' : 'clamp(160px, 40%, 320px)',
             display: 'flex',
             alignItems: 'center',
             gap: '6px',
@@ -95,7 +129,7 @@ const AccomodationsSection = ({ sectionRef }) => {
             justifyContent: 'center',
             gap: 0,
             width: '100%',
-            flexWrap: 'wrap',
+            flexWrap: isMobile ? 'nowrap' : 'wrap',
           }}>
 
             {/* Hotel photo */}
@@ -106,8 +140,8 @@ const AccomodationsSection = ({ sectionRef }) => {
               style={{
                 flexShrink: 0,
                 display: 'block',
-                width: 'clamp(130px, 20vw, 300px)',
-                height: 'clamp(234px, 36vw, 480px)',
+                width: isMobile ? '110px' : 'clamp(130px, 20vw, 300px)',
+                height: isMobile ? '180px' : 'clamp(234px, 36vw, 480px)',
                 border: `1px solid rgba(181,157,88,0.3)`,
                 borderRadius: '12px',
                 overflow: 'hidden',
@@ -132,8 +166,8 @@ const AccomodationsSection = ({ sectionRef }) => {
             {/* Decorative connector */}
             <div style={{
               flexShrink: 0,
-              width: 'clamp(28px, 4vw, 48px)',
-              height: 'clamp(234px, 36vw, 480px)',
+              width: isMobile ? '20px' : 'clamp(28px, 4vw, 48px)',
+              height: isMobile ? '180px' : 'clamp(234px, 36vw, 480px)',
             }}>
               <svg
                 width="100%"
@@ -160,13 +194,13 @@ const AccomodationsSection = ({ sectionRef }) => {
               flexDirection: 'column',
               alignItems: 'center',
               justifyContent: 'center',
-              height: 'clamp(234px, 36vw, 480px)',
-              width: 'clamp(160px, 25vw, 280px)',
+              height: isMobile ? '180px' : 'clamp(234px, 36vw, 480px)',
+              width: isMobile ? '130px' : 'clamp(160px, 25vw, 280px)',
               flexShrink: 0,
-              padding: 'clamp(0px, 1vw, 0px) clamp(8px, 2vw, 16px)',
+              padding: isMobile ? '0 6px' : 'clamp(0px, 1vw, 0px) clamp(8px, 2vw, 16px)',
               boxSizing: 'border-box',
               textAlign: 'center',
-              gap: 'clamp(10px, 2vw, 18px)',
+              gap: isMobile ? '6px' : 'clamp(10px, 2vw, 18px)',
             }}>
 
               <div style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '6px' }}>
@@ -176,10 +210,10 @@ const AccomodationsSection = ({ sectionRef }) => {
               </div>
 
               <p style={{
-                fontFamily: 'Times New Roman, serif',
-                fontSize: 'clamp(0.6rem, 1.5vw, 0.88rem)',
+                fontFamily: 'gambarino',
+                fontSize: isMobile ? '0.52rem' : 'clamp(0.6rem, 1.5vw, 0.88rem)',
                 color: '#444',
-                lineHeight: 1.9,
+                lineHeight: 1.7,
                 margin: 0,
                 letterSpacing: '0.02em',
               }}>
@@ -196,9 +230,9 @@ const AccomodationsSection = ({ sectionRef }) => {
 
               <p style={{
                 fontFamily: 'Times New Roman, serif',
-                fontSize: 'clamp(0.6rem, 1.5vw, 0.88rem)',
+                fontSize: isMobile ? '0.52rem' : 'clamp(0.6rem, 1.5vw, 0.88rem)',
                 color: '#444',
-                lineHeight: 1.9,
+                lineHeight: 1.7,
                 margin: 0,
                 letterSpacing: '0.02em',
               }}>
@@ -218,9 +252,9 @@ const AccomodationsSection = ({ sectionRef }) => {
 
               <p style={{
                 fontFamily: 'Times New Roman, serif',
-                fontSize: 'clamp(0.6rem, 1.5vw, 0.88rem)',
+                fontSize: isMobile ? '0.52rem' : 'clamp(0.6rem, 1.5vw, 0.88rem)',
                 color: '#444',
-                lineHeight: 1.9,
+                lineHeight: 1.7,
                 margin: 0,
                 letterSpacing: '0.02em',
               }}>
@@ -236,7 +270,7 @@ const AccomodationsSection = ({ sectionRef }) => {
 
               <p style={{
                 fontFamily: 'Gambarino, serif',
-                fontSize: 'clamp(0.65rem, 1.5vw, 0.95rem)',
+                fontSize: isMobile ? '0.6rem' : 'clamp(0.65rem, 1.5vw, 0.95rem)',
                 color: GOLD,
                 letterSpacing: '0.1em',
                 margin: 0,

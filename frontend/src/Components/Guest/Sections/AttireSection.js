@@ -1,4 +1,7 @@
 import React from 'react';
+import useIsMobile from '../../../Helpers/Utilities/useIsMobile';
+import flowerBorder3 from '../../../Assets/Images/flower-border3.png';
+import flowerBorder4 from '../../../Assets/Images/flower-border4.png';
 import batch1Stars from '../../../Assets/Images/batch1-stars.png';
 import batch2Stars from '../../../Assets/Images/batch2-stars.png';
 
@@ -18,31 +21,54 @@ const gambarino = (size, color = '#333', extra = {}) => ({
 });
 
 const AttireSection = ({ sectionRef }) => {
+  const isMobile = useIsMobile();
+
   return (
-    <section
-      ref={sectionRef}
-      id="attire"
-      style={{
+  // Section
+      <section ref={sectionRef} style={{
         position: 'relative',
-        width: '100%',
+        background: 'rgba(255, 255, 255, 0.25)',
+        backdropFilter: 'blur(6px)',
+        WebkitBackdropFilter: 'blur(6px)',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         overflow: 'hidden',
-        paddingTop: 'clamp(60px, 10vw, 120px)',
-        paddingBottom: 'clamp(80px, 10vw, 120px)',
-        textAlign: 'center',
-        boxSizing: 'border-box',
-      }}
-    >
+        paddingTop: isMobile ? '30px' : '80px',
+        paddingBottom: isMobile ? '60px' : '300px',
+      }}>
 
+      {/* Top flower */}
+      <img src={flowerBorder3} alt="" style={{
+        position: 'absolute',
+        top: isMobile ? '-100px' : '-320px',
+        left: isMobile ? -70 : -350,
+        width: isMobile ? '130%' : '140%',
+        pointerEvents: 'none', zIndex: 2,
+        objectFit: 'fill',
+        height: isMobile ? '250px' : '800px',
+      }} />
 
+      {/* Bottom flower */}
+     <img src={flowerBorder4} alt="" style={{
+      position: 'absolute',
+      top: isMobile ? 'auto' : '600px',
+      bottom: isMobile ? '-80px' : 'auto',
+      left: isMobile ? -75 : -145,
+      width: isMobile ? '150%' : '125%',
+      pointerEvents: 'none', zIndex: 2,
+      objectFit: 'fill',
+      height: isMobile ? '220px' : '630px',
+    }} />
+
+      {/* Content */}
       <div style={{
-        position: 'relative', zIndex: 1,
+        position: 'relative', zIndex: 3,
         width: '100%',
         maxWidth: 'clamp(280px, 50vw, 560px)',
         padding: '0 16px',
         boxSizing: 'border-box',
+        marginTop: isMobile ? '100px' : '250px',
       }}>
 
         {/* Title */}
@@ -51,7 +77,8 @@ const AttireSection = ({ sectionRef }) => {
           fontSize: 'clamp(1.6rem, 3vw, 3.8rem)',
           margin: '0 0 clamp(6px, 1.2vw, 14px)',
           lineHeight: 1.1,
-          color: '#1e4c79',
+          color: GOLD,
+          textAlign: 'center',
         }}>
           Dress Code
         </p>
@@ -77,52 +104,44 @@ const AttireSection = ({ sectionRef }) => {
           margin: '4px 0 28px',
         }} />
 
-        {/* For the ladies */}
-        <p style={gambarino(
-          'clamp(0.65rem, 0.78vw, 0.88rem)',
-          '#555',
-          {
-            fontStyle: 'italic',
-            marginBottom: 'clamp(-16px, -3vw, -40px)',
-          }
-        )}>For the ladies:</p>
+     {/* For the ladies */}
+      <p style={gambarino(
+        isMobile ? '0.75rem' : '0.88rem',
+        '#555',
+        { fontStyle: 'italic',
+          textAlign: 'center',
+          marginBottom: isMobile ? '-28px' : '-50px' }
+      )}>For the ladies:</p>
 
-        <img
-          src={batch1Stars}
-          alt="Ladies color palette"
-          style={{
-            display: 'block',
-            width: 'clamp(110%, 100%, 100%)',
-            height: 'clamp(70px, 13vw, 160px)',
-            objectFit: 'contain',
-            margin: '0 auto',
-            marginLeft: 'clamp(-20px, 0px, auto)',
-            marginBottom: 'clamp(4px, 0.8vw, 10px)',
-          }}
-        />
+      <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+        <img src={batch1Stars} alt="Ladies color palette" style={{
+          width: isMobile ? '120%' : '100%',
+          maxWidth: '700px',
+          display: 'block',
+          height: isMobile ? '120px' : '160px',
+          objectFit: 'contain',
+          marginBottom: isMobile ? '6px' : '5px',
+        }} />
+      </div>
 
-        {/* For the gentlemen */}
-        <p style={gambarino(
-          'clamp(0.65rem, 0.78vw, 0.88rem)',
-          '#555',
-          {
-            fontStyle: 'italic',
-            marginBottom: 'clamp(-16px, -2.5vw, -30px)',
-          }
-        )}>and for the gentlemen:</p>
+      {/* For the gentlemen */}
+      <p style={gambarino(
+        isMobile ? '0.75rem' : '0.88rem',
+        '#555',
+        { fontStyle: 'italic', 
+          textAlign: 'center',
+          marginBottom: isMobile ? '-22px' : '-50px' }
+      )}>and for the gentlemen:</p>
 
-        <img
-          src={batch2Stars}
-          alt="Men color palette"
-          style={{
-            display: 'block',
-            width: 'clamp(110%, 80%, 80%)',
-            height: 'clamp(70px, 9vw, 110px)',
-            objectFit: 'contain',
-            margin: '0 auto',
-            marginLeft: 'clamp(-20px, 0px, auto)',
-          }}
-        />
+      <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+        <img src={batch2Stars} alt="Men color palette" style={{
+          width: isMobile ? '120%' : '100%',
+          maxWidth: '700px',
+          display: 'block',
+          height: isMobile ? '90px' : '110px',
+          objectFit: 'contain',
+        }} />
+      </div>
 
       </div>
     </section>

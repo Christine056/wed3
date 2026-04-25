@@ -74,7 +74,9 @@ const PrivacySection = ({ sectionRef }) => {
       padding: 'clamp(52px, 8vw, 80px) clamp(20px, 8vw, 60px)',
       textAlign: 'center',
       overflow: 'hidden',
-      background: '#f9f5ef',
+      background: 'rgba(255, 255, 255, 0.25)',
+      backdropFilter: 'blur(6px)',
+      WebkitBackdropFilter: 'blur(6px)',
       boxSizing: 'border-box',
       width: '100%',
     }}>

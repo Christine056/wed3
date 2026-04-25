@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import logoImg from '../../Assets/Images/logo.png';
+import backgroundBanner from '../../Assets/Images/background-banner.png';
 
 import DateLocationSection from '../../Components/Guest/Sections/DateLocationSection';
 import AttireSection from '../../Components/Guest/Sections/AttireSection';
@@ -177,7 +178,13 @@ const GuestHomePage = () => {
   );
 
   return (
-    <div>
+    <div style={{
+      backgroundImage: `url(${backgroundBanner})`,
+      backgroundAttachment: 'fixed',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+    }}>
       <style>{globalStyles}</style>
       {renderNavbar()}
       <div style={{ paddingTop: '56px' }}>

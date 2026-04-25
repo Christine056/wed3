@@ -1,4 +1,7 @@
 import React from 'react';
+import useIsMobile from '../../../Helpers/Utilities/useIsMobile';
+import flowerTop from '../../../Assets/Images/flower_entourage1.png';
+import flowerBottom from '../../../Assets/Images/flower_entourage2.png';
 
 if (!document.head.querySelector('[href*="Pinyon+Script"]')) {
   const fontLink = document.createElement('link');
@@ -68,99 +71,152 @@ const FourCol = ({ cols }) => (
 );
 
 const EntourageSection = ({ sectionRef }) => {
+  const isMobile = useIsMobile();
+
   return (
     <section
       id="entourage"
       ref={sectionRef}
       style={{
-        background: '#fff',
+        background: 'rgba(255, 255, 255, 0.25)',
+        backdropFilter: 'blur(6px)',
+        WebkitBackdropFilter: 'blur(6px)',
         width: '100%',
         position: 'relative',
         overflow: 'hidden',
       }}
     >
+
+      {/* ── Top Flower Image ── */}
+      <img
+        src={flowerTop}
+        alt=""
+        style={{
+          position: 'absolute',
+          top: isMobile ? '-25px' : '-160px',
+          left: isMobile ? -80 : -210,
+          pointerEvents: 'none',
+          zIndex: 2,
+          objectFit: 'fill',
+          width: isMobile ? '130%' : '120%',
+          height: isMobile ? '220px' : '800px',
+        }}
+      />
+
+      {/* ── Bottom Flower Image ── */}
+      <img
+        src={flowerBottom}
+        alt=""
+        style={{
+          position: 'absolute',
+          bottom: isMobile ? '0px' : '0px',
+          left: isMobile ? -30 : 1,
+          pointerEvents: 'none',
+          zIndex: 2,
+          objectFit: 'fill',
+          width: isMobile ? '110%' : '100%',
+          height: isMobile ? '190px' : '600px',
+        }}
+      />
+
+      {/* ── Content ── */}
       <div style={{
         display: 'flex', flexDirection: 'column', alignItems: 'center',
-        padding: 'clamp(40px, 6vw, 80px) clamp(16px, 4vw, 40px)',
+        padding: isMobile ? '160px 16px 110px' : '410px clamp(16px, 4vw, 40px) 550px',
       }}>
         <div style={{
           width: '100%',
-          maxWidth: 'clamp(340px, 55vw, 680px)',
+          maxWidth: isMobile ? '300px' : 'clamp(340px, 55vw, 680px)',
           textAlign: 'center',
         }}>
 
           {/* Title */}
           <p style={{
             fontFamily: 'Great Vibes',
-            fontSize: 'clamp(2.4rem, 5vw, 5rem)',
+            fontSize: isMobile ? '1.8rem' : 'clamp(2.4rem, 5vw, 5rem)',
             color: '#111', fontWeight: 600,
             margin: '0 0 -6px', lineHeight: 0.6,
           }}>Rogado — Ynoc</p>
           <p style={{
             fontFamily: 'Gambarino',
-            fontSize: 'clamp(0.85rem, 2.2vw, 2.5rem)',
-            letterSpacing: '-3px', textTransform: 'uppercase',
+            fontSize: isMobile ? '0.7rem' : 'clamp(0.85rem, 2.2vw, 2.5rem)',
+            letterSpacing: isMobile ? '-1px' : '-3px',
+            textTransform: 'uppercase',
             color: '#111', fontWeight: 400,
-            margin: '0 0 18px',
+            margin: '0 0 14px',
           }}>Nuptials</p>
 
           {/* Officiating Priest */}
-          <GoldSubtitle>Officiating Priest</GoldSubtitle>
-          <Name>His Excellence Most Rev. Jose S. Palma, D.D.</Name>
-          <Name>Archbishop Emeritus of Cebu</Name>
+          <GoldSubtitle style={{ fontSize: isMobile ? '0.65rem' : '0.75rem' }}>
+            Officiating Priest
+          </GoldSubtitle>
+          <Name style={{ fontSize: isMobile ? '0.62rem' : '0.72rem' }}>
+            His Excellence Most Rev. Jose S. Palma, D.D.
+          </Name>
+          <Name style={{ fontSize: isMobile ? '0.62rem' : '0.72rem' }}>
+            Archbishop Emeritus of Cebu
+          </Name>
 
-          <div style={{ height: '10px' }} />
+          <div style={{ height: isMobile ? '8px' : '10px' }} />
 
           {/* Concelebrant */}
-          <GoldSubtitle>Concelebrant</GoldSubtitle>
-          <Name>Reverend Father Brian Brigoli</Name>
+          <GoldSubtitle style={{ fontSize: isMobile ? '0.65rem' : '0.75rem' }}>
+            Concelebrant
+          </GoldSubtitle>
+          <Name style={{ fontSize: isMobile ? '0.62rem' : '0.72rem' }}>
+            Reverend Father Brian Brigoli
+          </Name>
 
-          {/* Principal Sponsors */}
           <GoldDividerLabel subtitle="To stand as principal witness in our exchange of vows">
             Principal Sponsors
           </GoldDividerLabel>
 
-          <div style={{ height: '8px' }} />
+          <div style={{ height: isMobile ? '6px' : '8px' }} />
 
-          <div style={{ fontSize: 'clamp(0.6rem, 0.8vw, 0.82rem)' }}>
+          <div style={{ fontSize: isMobile ? '0.58rem' : 'clamp(0.6rem, 0.8vw, 0.82rem)' }}>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0 16px', marginTop: '8px' }}>
               <div style={{ gridColumn: '1 / -1', textAlign: 'center' }}>
-                <Name>Mayor Marvey A. Marino & Congresswoman Beverly Rose A. Dimacuha-Marino</Name>
+                <Name style={{ fontSize: isMobile ? '0.58rem' : '0.72rem' }}>
+                  Mayor Marvey A. Marino & Congresswoman Beverly Rose A. Dimacuha-Marino
+                </Name>
               </div>
               <div style={{ textAlign: 'left' }}>
-                <Name>Mr. Guilbert B. Alea & Dr. Maryrose B. Alea</Name>
-                <Name>Dr. Butch Arenajo & Atty. Lady Arenajo</Name>
-                <Name>Mr. Chilo James Delator & Mrs. Helen Delator</Name>
-                <Name>Mr. Fred Gabuya & Mrs. Chona Gabuya</Name>
-                <Name>Dr. Ode Blanco & Mrs. Libby Blanco</Name>
+                <Name style={{ fontSize: isMobile ? '0.58rem' : '0.72rem' }}>Mr. Guilbert B. Alea & Dr. Maryrose B. Alea</Name>
+                <Name style={{ fontSize: isMobile ? '0.58rem' : '0.72rem' }}>Dr. Butch Arenajo & Atty. Lady Arenajo</Name>
+                <Name style={{ fontSize: isMobile ? '0.58rem' : '0.72rem' }}>Mr. Chilo James Delator & Mrs. Helen Delator</Name>
+                <Name style={{ fontSize: isMobile ? '0.58rem' : '0.72rem' }}>Mr. Fred Gabuya & Mrs. Chona Gabuya</Name>
+                <Name style={{ fontSize: isMobile ? '0.58rem' : '0.72rem' }}>Dr. Ode Blanco & Mrs. Libby Blanco</Name>
               </div>
               <div style={{ textAlign: 'right' }}>
-                <Name>Mr. Raymond Rogado & Mrs. Arlyn Tad-y</Name>
-                <Name>Mr. Clifford S. Con-ui & Mrs. Ebgie E. Gierran</Name>
-                <Name>Mr. Marlonito Colina & Mrs. Rose Marie Colina</Name>
-                <Name>Mr. Henry P. Lepiten Jr. & Mrs. Jenie D. Lepiten</Name>
+                <Name style={{ fontSize: isMobile ? '0.58rem' : '0.72rem' }}>Mr. Raymond Rogado & Mrs. Arlyn Tad-y</Name>
+                <Name style={{ fontSize: isMobile ? '0.58rem' : '0.72rem' }}>Mr. Clifford S. Con-ui & Mrs. Ebgie E. Gierran</Name>
+                <Name style={{ fontSize: isMobile ? '0.58rem' : '0.72rem' }}>Mr. Marlonito Colina & Mrs. Rose Marie Colina</Name>
+                <Name style={{ fontSize: isMobile ? '0.58rem' : '0.72rem' }}>Mr. Henry P. Lepiten Jr. & Mrs. Jenie D. Lepiten</Name>
               </div>
             </div>
           </div>
 
-          <div style={{ height: 'clamp(20px, 3vw, 30px)' }} />
+          <div style={{ height: isMobile ? '14px' : 'clamp(20px, 3vw, 30px)' }} />
 
-          <GoldSubtitle>To assist our needs</GoldSubtitle>
+          {/* Best Men / Matrons */}
+          <GoldSubtitle style={{ fontSize: isMobile ? '0.65rem' : '0.75rem' }}>
+            To assist our needs
+          </GoldSubtitle>
           <div style={{ height: '6px' }} />
 
           <TwoCol
             left={
               <>
-                <GoldSubtitle size="0.95rem">Best Men</GoldSubtitle>
-                <Name>Mr. Jonas Benedict V. Rogado</Name>
-                <Name>Mr. Ernest E. Gierran</Name>
+                <GoldSubtitle size={isMobile ? '0.8rem' : '0.95rem'}>Best Men</GoldSubtitle>
+                <Name style={{ fontSize: isMobile ? '0.6rem' : '0.72rem' }}>Mr. Jonas Benedict V. Rogado</Name>
+                <Name style={{ fontSize: isMobile ? '0.6rem' : '0.72rem' }}>Mr. Ernest E. Gierran</Name>
               </>
             }
             right={
               <>
-                <GoldSubtitle size="0.95rem">Matrons of Honor</GoldSubtitle>
-                <Name>Mrs. Mary Antonette Y. Stubbing</Name>
-                <Name>Mrs. Danika Joan N. Llanto</Name>
+                <GoldSubtitle size={isMobile ? '0.8rem' : '0.95rem'}>Matrons of Honor</GoldSubtitle>
+                <Name style={{ fontSize: isMobile ? '0.6rem' : '0.72rem' }}>Mrs. Mary Antonette Y. Stubbing</Name>
+                <Name style={{ fontSize: isMobile ? '0.6rem' : '0.72rem' }}>Mrs. Danika Joan N. Llanto</Name>
               </>
             }
           />
@@ -174,68 +230,70 @@ const EntourageSection = ({ sectionRef }) => {
           <TwoCol
             left={
               <>
-                <GoldSubtitle size="0.95rem">Groomsmen</GoldSubtitle>
-                <Name>Mr. Mark Anthony A. Ynoc</Name>
-                <Name>Mr. Barlowe Manell E. Rogado</Name>
-                <Name>Mr. Enrico John Llanto</Name>
-                <Name>Mr. Nicky Nelson E. Escasenas</Name>
-                <Name>Mr. Marvin A. Tad-y</Name>
-                <Name>Mr. Kenneth R. Escanilla</Name>
-                <Name>Engr. Brant Jason E. Rogado</Name>
-                <Name>Mr. Jbonnie Christian D. Rogado</Name>
+                <GoldSubtitle size={isMobile ? '0.8rem' : '0.95rem'}>Groomsmen</GoldSubtitle>
+                <Name style={{ fontSize: isMobile ? '0.6rem' : '0.72rem' }}>Mr. Mark Anthony A. Ynoc</Name>
+                <Name style={{ fontSize: isMobile ? '0.6rem' : '0.72rem' }}>Mr. Barlowe Manell E. Rogado</Name>
+                <Name style={{ fontSize: isMobile ? '0.6rem' : '0.72rem' }}>Mr. Enrico John Llanto</Name>
+                <Name style={{ fontSize: isMobile ? '0.6rem' : '0.72rem' }}>Mr. Nicky Nelson E. Escasenas</Name>
+                <Name style={{ fontSize: isMobile ? '0.6rem' : '0.72rem' }}>Mr. Marvin A. Tad-y</Name>
+                <Name style={{ fontSize: isMobile ? '0.6rem' : '0.72rem' }}>Mr. Kenneth R. Escanilla</Name>
+                <Name style={{ fontSize: isMobile ? '0.6rem' : '0.72rem' }}>Engr. Brant Jason E. Rogado</Name>
+                <Name style={{ fontSize: isMobile ? '0.6rem' : '0.72rem' }}>Mr. Jbonnie Christian D. Rogado</Name>
               </>
             }
             right={
               <>
-                <GoldSubtitle size="0.95rem">Bridesmaids</GoldSubtitle>
-                <Name>Dr. Charlene Kay A. Ynoc</Name>
-                <Name>Mrs. Katrina Y. Rogado</Name>
-                <Name>Ms. Queency Ann M. Arong</Name>
-                <Name>Mrs. Maria Ysabella G. Cang</Name>
-                <Name>Mrs. Roxnne Monique R. Go</Name>
-                <Name>Ms. Nykesha Therese E. Rogado</Name>
-                <Name>Ms. Alyssa Cristina G. Bigornia</Name>
-                <Name>Ms. Maria Feline D. Soria</Name>
+                <GoldSubtitle size={isMobile ? '0.8rem' : '0.95rem'}>Bridesmaids</GoldSubtitle>
+                <Name style={{ fontSize: isMobile ? '0.6rem' : '0.72rem' }}>Dr. Charlene Kay A. Ynoc</Name>
+                <Name style={{ fontSize: isMobile ? '0.6rem' : '0.72rem' }}>Mrs. Katrina Y. Rogado</Name>
+                <Name style={{ fontSize: isMobile ? '0.6rem' : '0.72rem' }}>Ms. Queency Ann M. Arong</Name>
+                <Name style={{ fontSize: isMobile ? '0.6rem' : '0.72rem' }}>Mrs. Maria Ysabella G. Cang</Name>
+                <Name style={{ fontSize: isMobile ? '0.6rem' : '0.72rem' }}>Mrs. Roxnne Monique R. Go</Name>
+                <Name style={{ fontSize: isMobile ? '0.6rem' : '0.72rem' }}>Ms. Nykesha Therese E. Rogado</Name>
+                <Name style={{ fontSize: isMobile ? '0.6rem' : '0.72rem' }}>Ms. Alyssa Cristina G. Bigornia</Name>
+                <Name style={{ fontSize: isMobile ? '0.6rem' : '0.72rem' }}>Ms. Maria Feline D. Soria</Name>
               </>
             }
           />
 
-          <div style={{ height: '10px' }} />
+          <div style={{ height: isMobile ? '8px' : '10px' }} />
 
-          <GoldSubtitle size="0.95rem">Junior Bridesmaid</GoldSubtitle>
-          <Name>Maria Ameerha Y. Rogado</Name>
+          <GoldSubtitle size={isMobile ? '0.8rem' : '0.95rem'}>Junior Bridesmaid</GoldSubtitle>
+          <Name style={{ fontSize: isMobile ? '0.6rem' : '0.72rem' }}>Maria Ameerha Y. Rogado</Name>
 
-          <div style={{ height: 'clamp(30px, 4.5vw, 50px)' }} />
+          <div style={{ height: isMobile ? '20px' : 'clamp(30px, 4.5vw, 50px)' }} />
 
-          <GoldSubtitle>To carry our symbol of Love, Treasure, and Faith</GoldSubtitle>
+          <GoldSubtitle style={{ fontSize: isMobile ? '0.65rem' : '0.75rem' }}>
+            To carry our symbol of Love, Treasure, and Faith
+          </GoldSubtitle>
           <div style={{ height: '6px' }} />
 
           <FourCol cols={[
             <>
-              <GoldSubtitle size="0.8rem">Ring Bearer</GoldSubtitle>
-              <Name style={{ fontSize: '0.62rem' }}>Beauden Antoine Y. Stubbing</Name>
+              <GoldSubtitle size={isMobile ? '0.65rem' : '0.8rem'}>Ring Bearer</GoldSubtitle>
+              <Name style={{ fontSize: isMobile ? '0.55rem' : '0.62rem' }}>Beauden Antoine Y. Stubbing</Name>
             </>,
             <>
-              <GoldSubtitle size="0.8rem">Bible Bearer</GoldSubtitle>
-              <Name style={{ fontSize: '0.62rem' }}>Archer Bruce Y. Stubbing</Name>
+              <GoldSubtitle size={isMobile ? '0.65rem' : '0.8rem'}>Bible Bearer</GoldSubtitle>
+              <Name style={{ fontSize: isMobile ? '0.55rem' : '0.62rem' }}>Archer Bruce Y. Stubbing</Name>
             </>,
             <>
-              <GoldSubtitle size="0.8rem">Ring Bearer</GoldSubtitle>
-              <Name style={{ fontSize: '0.62rem' }}>Arthur R. Go</Name>
+              <GoldSubtitle size={isMobile ? '0.65rem' : '0.8rem'}>Ring Bearer</GoldSubtitle>
+              <Name style={{ fontSize: isMobile ? '0.55rem' : '0.62rem' }}>Arthur R. Go</Name>
             </>,
             <>
-              <GoldSubtitle size="0.8rem">Bible Bearer</GoldSubtitle>
-              <Name style={{ fontSize: '0.62rem' }}>Magnus Anton A. Ynoc</Name>
+              <GoldSubtitle size={isMobile ? '0.65rem' : '0.8rem'}>Bible Bearer</GoldSubtitle>
+              <Name style={{ fontSize: isMobile ? '0.55rem' : '0.62rem' }}>Magnus Anton A. Ynoc</Name>
             </>,
           ]} />
 
-          <div style={{ height: '10px' }} />
+          <div style={{ height: isMobile ? '8px' : '10px' }} />
 
-          <GoldSubtitle size="0.95rem">Flower Girls</GoldSubtitle>
+          <GoldSubtitle size={isMobile ? '0.8rem' : '0.95rem'}>Flower Girls</GoldSubtitle>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '12px', marginTop: '6px', flexWrap: 'wrap' }}>
-            <Name>Arabella Rianna R. Go</Name>
-            <Name>Aela Vernice C. Abit</Name>
-            <Name>Rizzini Victoria B. Gomez</Name>
+            <Name style={{ fontSize: isMobile ? '0.6rem' : '0.72rem' }}>Arabella Rianna R. Go</Name>
+            <Name style={{ fontSize: isMobile ? '0.6rem' : '0.72rem' }}>Aela Vernice C. Abit</Name>
+            <Name style={{ fontSize: isMobile ? '0.6rem' : '0.72rem' }}>Rizzini Victoria B. Gomez</Name>
           </div>
 
           <GoldDividerLabel>Secondary Sponsors</GoldDividerLabel>
@@ -249,8 +307,8 @@ const EntourageSection = ({ sectionRef }) => {
               { label: 'To bind us together', name: 'Mr. Britt Carli Reroma & Mrs. Sybil Reroma' },
             ].map(({ label, name }) => (
               <div key={label} style={{ flex: 1, textAlign: 'center' }}>
-                <GoldSubtitle size="0.7rem" style={{ fontStyle: 'italic' }}>{label}</GoldSubtitle>
-                <Name style={{ fontSize: '0.62rem' }}>{name}</Name>
+                <GoldSubtitle size={isMobile ? '0.6rem' : '0.7rem'} style={{ fontStyle: 'italic' }}>{label}</GoldSubtitle>
+                <Name style={{ fontSize: isMobile ? '0.55rem' : '0.62rem' }}>{name}</Name>
               </div>
             ))}
           </div>
