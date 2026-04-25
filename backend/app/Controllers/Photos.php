@@ -36,19 +36,20 @@ class Photos extends MYT_Controller
         }
 
         // Create upload directory
-        $uploadPath = WRITEPATH . 'uploads/photos/';
+        $uploadPath = FCPATH . 'uploads/photos/';
         if (!is_dir($uploadPath)) {
             mkdir($uploadPath, 0777, true);
         }
 
-        $newName = $file->getRandomName();
+      $ext     = pathinfo($file->getName(), PATHINFO_EXTENSION);
+      $newName = uniqid('photo_', true) . '.' . $ext;
 
         if (!$file->move($uploadPath, $newName)) {
             return $this->errorResponse(['File upload failed. Please try again.']);
         }
 
         // Build accessible URL
-        $fileUrl = base_url('uploads/photos/' . $newName);
+        $fileUrl = 'http://localhost:8080/uploads/photos/' . $newName;
 
         $model = new PhotoModel();
         $id = $model->insert([

@@ -1,52 +1,255 @@
 import React from 'react';
-import useIsMobile from '../../../Helpers/Utilities/useIsMobile';
+import accomHotel from '../../../Assets/Images/accom-hotel.jpg';
 
-const PURPLE = '#8F358C';
+if (!document.head.querySelector('[href*="Great+Vibes"]')) {
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href =
+    'https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Gambarino&display=swap';
+  document.head.appendChild(link);
+}
 
-const gambarino = (size, color = '#222', extra = {}) => ({
-  fontFamily: 'Gambarino, serif', fontSize: size,
-  color, fontWeight: 400, margin: 0, ...extra,
-});
+const GOLD = '#B59D58';
+const GOLD_LIGHT = '#D4B96A';
 
-const arial = (size, color = '#333', extra = {}) => ({
-  fontFamily: 'Arial, sans-serif', fontSize: size,
-  color, margin: 0, ...extra,
-});
-
-const AccommodationSection = ({ sectionRef }) => {
-  const isMobile = useIsMobile();
-
+const AccomodationsSection = ({ sectionRef }) => {
   return (
-    <section ref={sectionRef} style={{
-      minHeight: '50vh', background: '#fdf9ff',
-      display: 'flex', flexDirection: 'column',
-      alignItems: 'center', justifyContent: 'center',
-      padding: isMobile ? '60px 24px' : '80px 40px',
-      textAlign: 'center',
-    }}>
-      <p style={gambarino(isMobile ? '2rem' : '2.8rem', PURPLE, { marginBottom: '16px' })}>
-        Accommodation
-      </p>
-      <p style={arial(isMobile ? '0.88rem' : '0.95rem', '#555', {
-        lineHeight: 1.8, marginBottom: '24px', maxWidth: '420px',
-      })}>
-        We have arranged a special discount for our guests at Radisson Blu Cebu. Use the exclusive code below when booking.
-      </p>
-      <div style={{
-        border: '1px solid rgba(143,53,140,0.25)',
-        borderRadius: '12px',
-        padding: isMobile ? '20px 28px' : '28px 40px',
+    <section
+      ref={sectionRef}
+      id="accommodation"
+      style={{
+        position: 'relative',
+        overflow: 'hidden',
+        minHeight: '60vh',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: 'clamp(60px, 10vw, 120px) clamp(18px, 5vw, 40px)',
         textAlign: 'center',
+      }}
+    >
+      <div style={{
+        position: 'relative',
+        zIndex: 3,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        width: '100%',
       }}>
-        <p style={arial('0.8rem', '#999', {
-          letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '8px',
-        })}>Exclusive Discount Code</p>
-        <p style={gambarino(isMobile ? '1.4rem' : '1.8rem', PURPLE, { letterSpacing: '4px' })}>
-          [CODE HERE]
+
+        {/* Title */}
+        <p style={{
+          fontFamily: 'Great Vibes',
+          fontSize: 'clamp(2.2rem, 6vw, 4.2rem)',
+          margin: '0 0 clamp(20px, 3vw, 32px)',
+          lineHeight: 1.1,
+          color: '#1e4c79',
+        }}>
+          Accommodation
         </p>
+
+        {/* Card */}
+        <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          width: '100%',
+          maxWidth: 'clamp(320px, 90vw, 820px)',
+          border: `1px solid rgba(181,157,88,0.25)`,
+          borderRadius: '20px',
+          padding: 'clamp(24px, 4vw, 32px) clamp(12px, 4vw, 36px)',
+          gap: 'clamp(12px, 2vw, 20px)',
+          boxSizing: 'border-box',
+        }}>
+
+          {/* Hotel name */}
+          <p style={{
+            fontFamily: 'Gambarino, serif',
+            fontSize: 'clamp(1.1rem, 3vw, 1.8rem)',
+            fontWeight: 400,
+            margin: 0,
+            lineHeight: 1.2,
+            color: '#2a5a8a',
+          }}>
+            Radisson Blu Hotel
+          </p>
+
+          {/* Gold divider */}
+          <div style={{
+            width: 'clamp(160px, 40%, 320px)',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px',
+          }}>
+            <div style={{ flex: 1, height: '0.5px', background: GOLD, opacity: 0.5 }} />
+            <div style={{ width: 4, height: 4, background: GOLD, transform: 'rotate(45deg)', opacity: 0.8 }} />
+            <div style={{ flex: 1, height: '0.5px', background: GOLD, opacity: 0.5 }} />
+          </div>
+
+          {/* Photo + connector + text row */}
+          <div style={{
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: 0,
+            width: '100%',
+            flexWrap: 'wrap',
+          }}>
+
+            {/* Hotel photo */}
+            <a
+              href="https://maps.google.com/?q=Radisson+Blu+Hotel+Cebu"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                flexShrink: 0,
+                display: 'block',
+                width: 'clamp(130px, 20vw, 300px)',
+                height: 'clamp(234px, 36vw, 480px)',
+                border: `1px solid rgba(181,157,88,0.3)`,
+                borderRadius: '12px',
+                overflow: 'hidden',
+                cursor: 'pointer',
+              }}
+            >
+              <img
+                src={accomHotel}
+                alt="Radisson Blu Hotel Cebu"
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  display: 'block',
+                  transition: 'transform 0.4s ease',
+                }}
+                onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.04)'}
+                onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+              />
+            </a>
+
+            {/* Decorative connector */}
+            <div style={{
+              flexShrink: 0,
+              width: 'clamp(28px, 4vw, 48px)',
+              height: 'clamp(234px, 36vw, 480px)',
+            }}>
+              <svg
+                width="100%"
+                height="100%"
+                viewBox="0 0 48 480"
+                xmlns="http://www.w3.org/2000/svg"
+                style={{ display: 'block' }}
+              >
+                <line x1="24" y1="24" x2="24" y2="456" stroke={GOLD} strokeWidth="0.6" opacity="0.45" />
+                <polygon points="24,18 29,24 24,30 19,24" fill={GOLD} opacity="0.75" />
+                <polygon points="24,462 29,456 24,450 19,456" fill={GOLD} opacity="0.75" />
+                <circle cx="24" cy="240" r="6" fill="none" stroke={GOLD} strokeWidth="0.7" opacity="0.8" />
+                <circle cx="24" cy="240" r="2" fill={GOLD} opacity="0.9" />
+                {[0.28, 0.38, 0.62, 0.72].map((pos, i) => (
+                  <line key={i} x1="19" y1={480 * pos} x2="29" y2={480 * pos}
+                    stroke={GOLD} strokeWidth="0.5" opacity="0.4" />
+                ))}
+              </svg>
+            </div>
+
+            {/* Text block */}
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              height: 'clamp(234px, 36vw, 480px)',
+              width: 'clamp(160px, 25vw, 280px)',
+              flexShrink: 0,
+              padding: 'clamp(0px, 1vw, 0px) clamp(8px, 2vw, 16px)',
+              boxSizing: 'border-box',
+              textAlign: 'center',
+              gap: 'clamp(10px, 2vw, 18px)',
+            }}>
+
+              <div style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                <div style={{ flex: 1, height: '0.5px', background: GOLD, opacity: 0.4 }} />
+                <div style={{ width: 4, height: 4, background: GOLD, transform: 'rotate(45deg)', opacity: 0.7 }} />
+                <div style={{ flex: 1, height: '0.5px', background: GOLD, opacity: 0.4 }} />
+              </div>
+
+              <p style={{
+                fontFamily: 'Times New Roman, serif',
+                fontSize: 'clamp(0.6rem, 1.5vw, 0.88rem)',
+                color: '#444',
+                lineHeight: 1.9,
+                margin: 0,
+                letterSpacing: '0.02em',
+              }}>
+                We have arranged hotel
+                <br />accommodations with
+                <br />a special rate.
+              </p>
+
+              <div style={{ width: '60%', display: 'flex', alignItems: 'center', gap: '5px' }}>
+                <div style={{ flex: 1, height: '0.5px', background: GOLD, opacity: 0.3 }} />
+                <div style={{ width: 3, height: 3, background: GOLD, transform: 'rotate(45deg)', opacity: 0.55 }} />
+                <div style={{ flex: 1, height: '0.5px', background: GOLD, opacity: 0.3 }} />
+              </div>
+
+              <p style={{
+                fontFamily: 'Times New Roman, serif',
+                fontSize: 'clamp(0.6rem, 1.5vw, 0.88rem)',
+                color: '#444',
+                lineHeight: 1.9,
+                margin: 0,
+                letterSpacing: '0.02em',
+              }}>
+                A block of rooms have been
+                <br />reserved under the{' '}
+                <span style={{ fontStyle: 'italic', color: GOLD_LIGHT }}>
+                  Rogado-Ynoc
+                </span>
+                <br />wedding.
+              </p>
+
+              <div style={{ width: '60%', display: 'flex', alignItems: 'center', gap: '5px' }}>
+                <div style={{ flex: 1, height: '0.5px', background: GOLD, opacity: 0.3 }} />
+                <div style={{ width: 3, height: 3, background: GOLD, transform: 'rotate(45deg)', opacity: 0.55 }} />
+                <div style={{ flex: 1, height: '0.5px', background: GOLD, opacity: 0.3 }} />
+              </div>
+
+              <p style={{
+                fontFamily: 'Times New Roman, serif',
+                fontSize: 'clamp(0.6rem, 1.5vw, 0.88rem)',
+                color: '#444',
+                lineHeight: 1.9,
+                margin: 0,
+                letterSpacing: '0.02em',
+              }}>
+                To book, please mention
+                <br />our names for a discount.
+              </p>
+
+              <div style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                <div style={{ flex: 1, height: '0.5px', background: GOLD, opacity: 0.4 }} />
+                <div style={{ width: 4, height: 4, background: GOLD, transform: 'rotate(45deg)', opacity: 0.7 }} />
+                <div style={{ flex: 1, height: '0.5px', background: GOLD, opacity: 0.4 }} />
+              </div>
+
+              <p style={{
+                fontFamily: 'Gambarino, serif',
+                fontSize: 'clamp(0.65rem, 1.5vw, 0.95rem)',
+                color: GOLD,
+                letterSpacing: '0.1em',
+                margin: 0,
+              }}>
+                Thank you!
+              </p>
+
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
 };
 
-export default AccommodationSection;
+export default AccomodationsSection;

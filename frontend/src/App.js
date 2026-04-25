@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
+import SnapUploadPage from './Pages/Guest/SnapUploadPage';
 
 // Guest Pages
 import GuestLogin from './Pages/Guest/GuestLogin';
@@ -12,7 +13,6 @@ import WhereToStay from './Pages/Guest/WhereToStay';
 import FAQ from './Pages/Guest/FAQ';
 import DressCode from './Pages/Guest/DressCode';
 import LoveNote from './Pages/Guest/LoveNote';
-import GuestHomePage from './Pages/Guest/GuestHomePage';
 
 // Admin Pages
 import AdminLogin from './Pages/Admin/AdminLogin';
@@ -53,15 +53,14 @@ function App() {
         {/* Guest Routes */}
         <Route path="/" element={<GuestLogin />} />
         <Route path="/rsvp" element={<RSVPRoute><RSVPPage /></RSVPRoute>} />
-        <Route path="/home" element={<GuestRoute><GuestHomePage /></GuestRoute>} />
+        <Route path="/home" element={<GuestRoute><WeddingHome /></GuestRoute>} />
         <Route path="/schedule" element={<GuestRoute><WeddingSchedule /></GuestRoute>} />
         <Route path="/location" element={<GuestRoute><Location /></GuestRoute>} />
         <Route path="/where-to-stay" element={<GuestRoute><WhereToStay /></GuestRoute>} />
         <Route path="/faq" element={<GuestRoute><FAQ /></GuestRoute>} />
         <Route path="/dress-code" element={<GuestRoute><DressCode /></GuestRoute>} />
         <Route path="/love-note" element={<GuestRoute><LoveNote /></GuestRoute>} />
-
-
+        <Route path="/snap-upload" element={<GuestRoute><SnapUploadPage /></GuestRoute>} />
 
         {/* Admin Routes */}
         <Route path="/admin" element={<AdminLogin />} />

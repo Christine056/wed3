@@ -1,7 +1,7 @@
 import React from 'react';
-import useIsMobile from '../../../Helpers/Utilities/useIsMobile';
+import { QRCodeSVG } from 'qrcode.react';
 
-const PURPLE = '#8F358C';
+const GOLD = '#d0c474';
 
 const gambarino = (size, color = '#222', extra = {}) => ({
   fontFamily: 'Gambarino, serif', fontSize: size,
@@ -14,37 +14,67 @@ const arial = (size, color = '#333', extra = {}) => ({
 });
 
 const SnapSection = ({ sectionRef }) => {
-  const isMobile = useIsMobile();
+  const uploadURL = `${window.location.origin}/snap-upload`;
 
   return (
-    <section ref={sectionRef} style={{
-      minHeight: '50vh', background: '#fff',
-      display: 'flex', flexDirection: 'column',
-      alignItems: 'center', justifyContent: 'center',
-      padding: isMobile ? '60px 24px' : '80px 40px',
-      textAlign: 'center',
-    }}>
-      <p style={gambarino(isMobile ? '2rem' : '2.8rem', PURPLE, { marginBottom: '16px' })}>
-        Snap &amp; Share
-      </p>
-      <p style={arial(isMobile ? '0.88rem' : '0.95rem', '#555', {
-        lineHeight: 1.8, marginBottom: '32px', maxWidth: '380px',
-      })}>
-        Captured a special moment? We'd love to see it! Scan the QR code below to upload your photos from our big day.
-      </p>
-      {/* Replace this div with <img src={qrCode} /> when QR is ready */}
-      <div style={{
-        width: isMobile ? '160px' : '200px',
-        height: isMobile ? '160px' : '200px',
-        border: '2px dashed rgba(143,53,140,0.3)',
-        borderRadius: '12px',
-        display: 'flex', alignItems: 'center', justifyContent: 'center',
+    <>
+      <section ref={sectionRef} id="snap-share" style={{
+        minHeight: '50vh', background: '#fff',
+        display: 'flex', flexDirection: 'column',
+        alignItems: 'center', justifyContent: 'center',
+        padding: 'clamp(60px, 8vw, 80px) clamp(24px, 5vw, 40px)',
+        textAlign: 'center',
       }}>
-        <p style={arial('0.8rem', '#bbb', { textAlign: 'center', lineHeight: 1.6 })}>
-          QR Code<br />Coming Soon
+
+        <p style={gambarino('clamp(2rem, 4vw, 2.8rem)', GOLD, { marginBottom: '16px' })}>
+          Snap &amp; Share
         </p>
-      </div>
-    </section>
+
+        <p style={arial('clamp(0.88rem, 2vw, 0.95rem)', '#555', {
+          lineHeight: 1.8, marginBottom: '32px', maxWidth: '380px',
+        })}>
+          Captured a special moment? We'd love to see it!
+          Scan the QR code below to upload and view photos from our big day.
+        </p>
+
+        {/* QR Code Box */}
+        <div style={{
+          padding: '16px',
+          border: `2px solid ${GOLD}`,
+          borderRadius: '12px',
+          background: '#fff',
+          display: 'inline-flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: '10px',
+          boxShadow: '0 4px 20px rgba(0,0,0,0.08)',
+        }}>
+          <QRCodeSVG
+            value={uploadURL}
+            size={180}
+            bgColor="#ffffff"
+            fgColor="#222222"
+            level="H"
+          />
+          <p style={arial('0.72rem', '#999', { letterSpacing: '0.5px' })}>
+            Scan to view &amp; upload photos
+          </p>
+        </div>
+
+        {/* Fallback link for guests already on phone */}
+        <a href="/snap-upload" style={{
+          marginTop: '18px',
+          fontFamily: 'Gambarino, serif',
+          fontSize: 'clamp(0.75rem, 1.8vw, 0.85rem)',
+          color: GOLD,
+          textDecoration: 'underline',
+          letterSpacing: '0.5px',
+        }}>
+          Or tap here to open
+        </a>
+
+      </section>
+    </>
   );
 };
 
