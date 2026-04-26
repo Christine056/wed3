@@ -668,9 +668,11 @@ html,body{height:100%;overflow:hidden;}
   }
   .env-flower{width:clamp(140px,28vw,260px);}
   .env-flower-bl{bottom:-30px;left:-60px;}
-  .env-flower-tr{top:-40px;right:-40px;}
+  .env-flower-tr{top:35px;right:-40px;}
   .open-flower-bl{bottom:-60px;left:-60px;}
-  .open-flower-tr{top:0px;right:-40px;}
+  .open-flower-tr{top:20px;right:-30px;}
+  .c-input{padding:11px 36px 11px 11px;letter-spacing:3px;font-size:0.88rem;text-align:center;}
+  .c-input::placeholder{letter-spacing:1px;font-size:0.74rem;}
 }
 
 @media(max-width:540px){
@@ -683,32 +685,110 @@ html,body{height:100%;overflow:hidden;}
   .gl-card{padding:1.5rem 1rem 1.2rem;min-height:30vw !important;margin-top:-80px;}
   .gl-scene{width:100%;align-items:center;}
   .gl-open-wrap{width:100%;align-items:center;}
- .gl-card-zone{width:100%;display:flex;justify-content:center;margin-bottom:-220px;}
+  .gl-card-zone{width:100%;display:flex;justify-content:center;margin-bottom:-220px;}
   .gl-open-env{width:78vw;}
   .c-names{font-size:clamp(1.8rem,10vw,2.5rem);}
   .c-eyebrow{font-size:0.42rem;letter-spacing:2px;}
   .c-sub{font-size:0.42rem;letter-spacing:2px;}
   .c-btn{font-size:0.55rem;letter-spacing:3px;}
-  .seal-img,.seal-glow-ring{width:clamp(100px,28vw,100px);height:clamp(100px,28vw,100px);}
-  .gl-seal-overlay{top:unset;bottom:7%;transform:translate(-50%,0);} 
+  .seal-img,.seal-glow-ring{width:clamp(60px,28vw,60px);height:clamp(60px,28vw,60px);}
+  .seal-glow-ring{width:clamp(60px,20vw,80px);height:clamp(60px,20vw,80px);top:-15px;left:50%;}
+  .seal-glow-ring-2{width:clamp(175px,20vw,175px);height:clamp(175px,20vw,175px);top:-50px;left:-20%;}
+  .gl-seal-overlay{top:unset;bottom:27%;transform:translate(-50%,0);}
   .env-flower{width:clamp(150px,40vw,280px);}
   .env-flower-bl{bottom:-45px;left:-60px;}
   .env-flower-tr{top:45px;right:-35px;}
   .open-flower-bl{bottom:-60px;left:5px;}
-  .open-flower-tr{top:25px;right:15px;}
+  .open-flower-tr{top:35px;right:15px;}
   .gl-mute-btn{bottom:0.8rem;right:0.8rem;padding:0.35rem 0.65rem;}
 }
 
-@media(max-width:360px){
+@media(max-width:430px){
   :root{
-    --env-w:96vw;
-    --env-h:56vw;
-    --card-w:92vw;
+    --env-w:78vw !important;
+    --env-h:48vw !important;
+    --card-w:55vw !important;
   }
-  .env-flower{display:none;}
-  .open-flower-bl{display:none;}
-  .open-flower-tr{display:none;}
-  .c-names{font-size:clamp(1.5rem,9vw,2rem);}
+  .gl-card{padding:0.6rem 0.9rem 0.6rem;min-height:unset !important;margin-top:-70px;}
+  .gl-card-zone{margin-bottom:-200px;}
+  .gl-open-env{width:80vw;}
+  .c-mono-wrap{margin-bottom:0.4rem !important;}
+  .c-flourish{margin:0.2rem 0 0.3rem !important;}
+  .c-sub{margin-bottom:0.6rem !important;}
+  .c-hint{margin-top:0.3rem !important;}
+  .c-names{font-size:clamp(1.4rem,8vw,1.8rem);}
+  .c-input-wrap{margin-bottom:0.5rem !important;}
+  .c-names{font-size:clamp(1.6rem,9vw,2.2rem);}
+  .c-eyebrow{font-size:0.40rem;letter-spacing:2px;}
+  .c-sub{font-size:0.40rem;letter-spacing:2px;}
+  .c-btn{font-size:0.52rem;letter-spacing:3px;}
+  .seal-img,.seal-glow-ring{width:clamp(50px,24vw,50px);height:clamp(50px,24vw,50px);}
+  .seal-glow-ring{width:clamp(55px,18vw,75px);height:clamp(55px,18vw,75px);top:-12px;left:50%;}
+  .seal-glow-ring-2{width:clamp(150px,18vw,160px);height:clamp(150px,18vw,160px);top:-45px;left:-10%;}
+  .gl-seal-overlay{bottom:25%;transform:translate(-50%,0);}
+  .env-flower{width:clamp(130px,38vw,200px);}
+  .env-flower-bl{bottom:-35px;left:-45px;}
+  .env-flower-tr{top:55px;right:-25px;}
+  .open-flower-bl{bottom:-50px;left:0px;}
+  .open-flower-tr{top:-10px;right:5px;}
+}
+
+
+@media(max-width:411px){
+  :root{
+    --env-w:74vw !important;
+    --env-h:46vw !important;
+    --card-w:55vw !important;
+  }
+  .gl-root{justify-content:center;padding:1rem 0;}
+  .gl-card{padding:0.6rem 0.9rem 0.6rem;min-height:unset !important;margin-top:-90px;}
+  .gl-scene{width:100%;align-items:center;}
+  .gl-open-wrap{width:100%;align-items:center;}
+  .gl-card-zone{width:100%;display:flex;justify-content:center;margin-bottom:-210px;}
+  .gl-open-env{width:79vw;}
+  .c-names{font-size:clamp(1.6rem,9vw,2.2rem);}
+  .c-eyebrow{font-size:0.41rem;letter-spacing:2px;}
+  .c-sub{font-size:0.41rem;letter-spacing:2px;}
+  .c-btn{font-size:0.53rem;letter-spacing:3px;}
+  .c-mono-wrap{margin-bottom:0.5rem !important;}
+  .c-flourish{margin:0.3rem 0 0.4rem !important;}
+  .c-sub{margin-bottom:0.7rem !important;}
+  .c-hint{margin-top:0.4rem !important;}
+  .c-input-wrap{margin-bottom:0.6rem !important;}
+  .seal-img,.seal-glow-ring{width:clamp(55px,26vw,55px);height:clamp(55px,26vw,55px);}
+  .seal-glow-ring{width:clamp(58px,19vw,78px);height:clamp(58px,19vw,78px);top:-13px;left:50%;}
+  .seal-glow-ring-2{width:clamp(160px,19vw,168px);height:clamp(160px,19vw,168px);top:-48px;left:-15%;}
+  .gl-seal-overlay{top:unset;bottom:26%;transform:translate(-50%,0);}
+  .env-flower{width:clamp(140px,39vw,240px);}
+  .env-flower-bl{bottom:-40px;left:-52px;}
+  .env-flower-tr{top:50px;right:-30px;}
+  .open-flower-bl{bottom:-55px;left:2px;}
+  .open-flower-tr{top:-10px;right:5px;}
+  .gl-mute-btn{bottom:0.8rem;right:0.8rem;padding:0.35rem 0.65rem;}
+}
+
+@media(max-width:320px){
+  :root{
+    --env-w:90vw !important;
+    --env-h:54vw !important;
+    --card-w:86vw !important;
+  }
+  .gl-card{padding:1.1rem 0.8rem 0.9rem;min-height:36vw !important;margin-top:-50px;}
+  .gl-card-zone{margin-bottom:-165px;}
+  .gl-open-env{width:92vw;}
+  .c-names{font-size:clamp(1.3rem,8vw,1.8rem);}
+  .c-eyebrow{font-size:0.35rem;letter-spacing:1px;}
+  .c-sub{font-size:0.35rem;letter-spacing:1px;}
+  .c-btn{font-size:0.46rem;letter-spacing:2px;}
+  .seal-img,.seal-glow-ring{width:clamp(70px,20vw,90px);height:clamp(70px,20vw,90px);}
+  .seal-glow-ring{width:clamp(45px,14vw,65px);height:clamp(45px,14vw,65px);top:-8px;left:50%;}
+  .seal-glow-ring-2{width:clamp(110px,14vw,130px);height:clamp(110px,14vw,130px);top:-35px;left:-20%;}
+  .gl-seal-overlay{bottom:4%;transform:translate(-50%,0);}
+  .env-flower{width:clamp(100px,30vw,150px);}
+  .env-flower-bl{bottom:-25px;left:-25px;}
+  .env-flower-tr{top:25px;right:-15px;}
+  .open-flower-bl{bottom:-35px;left:0px;}
+  .open-flower-tr{top:0px;right:5px;}
 }
 
 @media(prefers-reduced-motion:reduce){
